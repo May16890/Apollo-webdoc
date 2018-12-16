@@ -3,31 +3,52 @@
 .Home {
     color: #ffffff;
     height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../../assets/img/bgHome.png);
 	background-repeat: no-repeat;
     background-size: cover;
-    .blackOverlay {
-        background: rgba(0, 0, 0, .4);
-        height: 100vh;
-        width: 100%;
-        position: absolute;
-        z-index: 0;
-    }
     &__container {
-        width: 1180px;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 499px;
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(43vh, auto);
+        grid-template-areas: 
+            '. . top-right'
+            'bottom-left bottom-left bottom-right';
     }
-    &__textDiv {
+// logoDiv section
+    .top-right {
+        grid-area: top-right;
         display: flex;
-        align-items: center;
+        justify-content: flex-end;
+    }
+// textDiv section
+    .bottom-left {
+        grid-area: bottom-left;
+        display: flex;
+    }
+// chaptersDiv section
+    .bottom-right {
+        grid-area: bottom-right;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+// logo section
+    &__logo {
+        height: 86px;
+        width: 84px;
+    }
+// textDiv section
+    &__textDiv {
         &__container {
-            height: 90%;
+            height: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         &__title {
             text-transform: uppercase;
@@ -43,36 +64,66 @@
             width: 135px;
             height: 3px;
             background: #ffffff;
-            margin: 24px 0px;
+            margin: 14px 0px;
             border-radius: 40px;
         }
         &__text {
-            width: 514px;
-            height: 125px;
+            width: 57%;
             font-family: Roboto;
             font-size: 19px;
             text-align: justify;
         }
     }
+
+// chaptersDiv section   
     &__chaptersDiv {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 75%;
+        }
         &__button1 {
             @include HomeBtn;
+        }
+        &__button1:hover {
+            color: black;
+            background: white;
+            border: 1px solid black;
         }
         &__button2 {
             @include HomeBtn;
         }
+        &__button2:hover {
+            color: black;
+            background: white;
+            border: 1px solid black;
+        }
         &__button3 {
-            @include HomeBtn;
+            @include HomeBtn;           
+        }
+        &__button3:hover {
+            color: black;
+            background: white;
+            border: 1px solid black;
         }
     }
 }
 
-// .bgHome {
-//     width: 1440px;
-//     height: 1024px;
-//     transform: rotate(-180deg);
-// }
+.bgHome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+}
+
+.blackOverlay {
+    background: rgba(0, 0, 0, .4);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
