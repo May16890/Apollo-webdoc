@@ -1,0 +1,78 @@
+@import '../../styles/mixin.scss';
+
+.Home {
+    color: #ffffff;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../assets/img/bgHome.png);
+	background-repeat: no-repeat;
+    background-size: cover;
+    .blackOverlay {
+        background: rgba(0, 0, 0, .4);
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+    }
+    &__container {
+        width: 1180px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 499px;
+    }
+    &__textDiv {
+        display: flex;
+        align-items: center;
+        &__container {
+            height: 90%;
+        }
+        &__title {
+            text-transform: uppercase;
+            font-family: FjallaOne;
+            font-size: 48px;
+            letter-spacing: 7.2px;
+        }
+        &__subtitle {
+            font-family: FjallaOne;
+            font-size: 48px;
+        }
+        &__whiteLine {
+            width: 135px;
+            height: 3px;
+            background: #ffffff;
+            margin: 24px 0px;
+            border-radius: 40px;
+        }
+        &__text {
+            width: 514px;
+            height: 125px;
+            font-family: Roboto;
+            font-size: 19px;
+            text-align: justify;
+        }
+    }
+    &__chaptersDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        &__button1 {
+            @include HomeBtn;
+        }
+        &__button2 {
+            @include HomeBtn;
+        }
+        &__button3 {
+            @include HomeBtn;
+        }
+    }
+}
+
+// .bgHome {
+//     width: 1440px;
+//     height: 1024px;
+//     transform: rotate(-180deg);
+// }
