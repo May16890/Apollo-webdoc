@@ -1,6 +1,10 @@
 @import './reset.scss';
-@import '../components/App/App.scss';
+@import './mixin.scss';
 
-body {
-  background: red;
-}
+// .logo {
+//   position: absolute;
+//   top: 112px;
+//   right: 126px;
+//   width: 84px;
+//   height: 86px;
+// }
