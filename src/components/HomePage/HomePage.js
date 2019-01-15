@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
-import './Home.scss';
+import './HomePage.scss';
 import logo from '../../assets/img/logo.png';
 import bgHome from '../../assets/img/bgHome.png';
+import { Link } from 'react-router-dom';
 
-class Home extends Component {
+class HomePage extends Component {
   render() {
     return (
       <section className="Home">
-
-        <div className="blackOverlay"></div>        
+            <h1 style={{ color: 'black', position: 'absolute', top: 10, left: 10}}>HOME</h1>
+            <hr />
+            <Link to='/intro' style={{ position: 'absolute', bottom: 10, right: 10 }}>START EXPERIENCE</Link>
+        {/* <div className="blackOverlay"></div>        
         <div className="Home__container">
 
             <div className="top-right">
@@ -49,10 +52,12 @@ class Home extends Component {
                 </div>
             </div>
 
-        </div>
+
+
+        </div> */}
       </section>
     );
   }
 }
 
-export default Home;
+export default HomePage;

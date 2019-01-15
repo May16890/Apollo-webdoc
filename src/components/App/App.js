@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.scss';
-import HomeContainer from '../Home/HomeContainer';
+import HomePageContainer from '../HomePage/HomePageContainer';
+import IntroPageContainer from '../IntroPage/IntroPageContainer';
+import SinglePageContainer from '../SinglePage/SinglePageContainer';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
@@ -9,7 +11,9 @@ class App extends Component {
       <div className="App">
         <Router>
           <Switch>
-            <Route exact path='/' component={HomeContainer}/>
+            <Route exact path='/' component={HomePageContainer}/>
+            <Route exact path='/intro' component={IntroPageContainer}/>
+            <Route exact path='/singlePage/:slug' component={SinglePageContainer}/>
           </Switch>
         </Router>
       </div>
