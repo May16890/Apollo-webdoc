@@ -9,7 +9,7 @@ class SinglePage extends Component {
       <section>
         <Link to='/intro'>BACK INTRO</Link>
         <hr />
-        <h1 style={{ color: 'black', }}>SINGLE PAGE {this.props.page}</h1>
+        <h1 style={{ color: 'black', fontSize:'2em', }}>SINGLE PAGE {this.props.page}</h1>
         <Timeline />
       </section>
     );

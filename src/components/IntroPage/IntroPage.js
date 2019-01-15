@@ -9,7 +9,10 @@ class IntroPage extends Component {
       <section className="Home">
         <Link to='/'>BACK HOME</Link>
         <hr />
-        <h1 style={{ color: 'black', }}>INTRO</h1>
+        <Link to='/navettes'>NAVETTES</Link>
+        <hr />
+        <Link to='/astronautes'>ASTRONAUTES</Link>
+        <h1 style={{ color: 'black', position: 'absolute', top: 10, left: 10}}>INTRO</h1>
         <Timeline />
       </section>
     );
