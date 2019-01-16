@@ -1,0 +1,20 @@
+.timeline {
+    &__dateContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 40px;
+        align-items: center;
+        margin-top: 8px;
+        &__date {
+            font-size: 11px;
+            color: rgba(255, 255, 255, .3);
+        }
+        &__traitUp {
+            width: 1px;
+            height: 26px;
+            background: white;
+            opacity: .25;
+        }
+    }
+}

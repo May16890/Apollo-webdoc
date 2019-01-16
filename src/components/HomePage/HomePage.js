@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './HomePage.scss';
-import logo from '../../assets/img/logo.png';
-import bgHome from '../../assets/img/bgHome.png';
+// import logo from '../../assets/img/logo.png';
+// import bgHome from '../../assets/img/bgHome.png';
 import { Link } from 'react-router-dom';
 
 class HomePage extends Component {

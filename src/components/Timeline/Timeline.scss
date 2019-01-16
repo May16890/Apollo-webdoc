@@ -1,0 +1,49 @@
+.timelineContainer {
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 4px;
+}
+
+.appear {
+    opacity: 1 !important;
+    transform: translateY(-30px);
+}
+
+.timeline {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    &__closeBtn {
+        border: 2px solid white;
+        border-radius: 50%;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0px;
+        height: 0px;
+        padding: 11px;
+        transform: translateY(-9px);
+        position: relative;
+        &__cross1 {
+            width: 17px;
+            height: 2px;
+            background: white;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            position: absolute;
+        }
+        &__cross2 {
+            width: 17px;
+            height: 2px;
+            background: white;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            position: absolute;
+        }
+    }
+}

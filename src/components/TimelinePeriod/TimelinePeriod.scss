@@ -1,0 +1,26 @@
+.timeline {
+    &__period {
+        display: flex;
+        justify-content: center;
+        color: white;
+        width: 18%;
+        height: 6px;
+        background: rgba(255, 255, 255, .3);
+        transition: ease-in-out .2s;
+        &__text {
+            display: none;
+            font-size: 1.2em;
+        }
+    }
+    &__period:hover {
+        height: 11px;
+        transform: translateY(-5px);
+        background: white;
+        opacity: 1;
+    }
+}
+
+.appear {
+    transform: translateY(-30px);
+    display: block;
+}
