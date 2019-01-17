@@ -2,10 +2,10 @@
     &__period {
         display: flex;
         justify-content: center;
-        color: white;
+        color: #CC2F2F;
         width: 18%;
         height: 6px;
-        background: rgba(255, 255, 255, .3);
+        background: rgba(255, 255, 255, 1);
         transition: ease-in-out .2s;
         &__text {
             display: none;
@@ -15,7 +15,7 @@
     &__period:hover {
         height: 11px;
         transform: translateY(-5px);
-        background: white;
+        background: #CC2F2F;
         opacity: 1;
     }
 }

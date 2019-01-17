@@ -11,12 +11,14 @@ class TimelinePeriod extends Component {
         this.setState({
             isAppear: true,
         })
+        this.props.setTargets(this.props.targets);
     }
 
     textDisappear = () => {
         this.setState({
             isAppear: false,
         })
+        this.props.removeTargets();
     }
 
     render() {

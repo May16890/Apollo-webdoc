@@ -13,6 +13,13 @@
         display: flex;
         align-items: center;
         color: white;
+        &__homeLink {
+            position: absolute;
+            top: 44px;
+            right: 60px;
+            z-index: 1;
+            color: grey;
+        }
         &__introOverlay {
             width: 100%;
             height: 100%;
@@ -72,7 +79,7 @@
 }
 
 .blackOverlay {
-    background: rgba(0, 0, 0, .64);
+    background: rgba(0, 0, 0, .3);
     height: 100vh;
     width: 100%;
     position: absolute;
@@ -84,4 +91,17 @@
     top: 102px;
     left: -10px;
     height: 658px;
+    animation: gravity 2.7s infinite;
+}
+
+@keyframes gravity {
+    0% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
 }
