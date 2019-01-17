@@ -1,10 +1,54 @@
+.timelineBlackContainer {
+    width: 100%;
+    height: 108px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
 .timelineContainer {
     color: black;
+    background: black;
     width: 100%;
+    height: 100%;;
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: relative;
     bottom: 4px;
+    animation-duration: 1.4s;
+    animation-name: show;
+    left: 0;
+}
+
+@keyframes show {
+    from {
+        left: -87%;
+    } 
+    to {
+        left: 0;
+    }
+}
+
+@keyframes hide {
+    from {
+        left: 0;
+    } 
+    to {
+        left: -87%;
+    }
+}
+
+.showOpenButton {
+    opacity: 1 !important;
+    transition: ease 3s;
+    left: 70px;
+}
+
+.hidden {
+    animation-duration: 1.4s;
+    animation-name: hide;
+    left: -87%;
 }
 
 .appear {
@@ -13,10 +57,12 @@
 }
 
 .timeline {
-    width: 90%;
+    width: 97%;
     display: flex;
     justify-content: space-between;
-    &__closeBtn {
+    position: absolute;
+    bottom: 4px;
+    &__toggleBtn {
         border: 2px solid white;
         border-radius: 50%;
         color: white;
@@ -29,6 +75,7 @@
         padding: 11px;
         transform: translateY(-9px);
         position: relative;
+        cursor: pointer;
         &__cross1 {
             width: 17px;
             height: 2px;
@@ -44,6 +91,50 @@
             -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
             position: absolute;
+        }
+    }
+    &__openBtnContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__openBtn {
+        border: 2px solid white;
+        border-radius: 50%;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0px;
+        height: 0px;
+        padding: 11px;
+        transform: translateY(-9px);
+        position: relative;
+        cursor: pointer;
+        &__arrow1 {
+            width: 10px;
+            height: 2px;
+            background: white;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg) translateY(-180%) translateX(-10%);
+            position: absolute;
+            border-radius: 22%;
+        }
+        &__arrow2 {
+            width: 10px;
+            height: 2px;
+            background: white;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(-45deg) translateY(180%) translateX(-10%);
+            position: absolute;
+            border-radius: 22%;
+        }
+        &__text {
+            color: rgba(255, 255, 255, 0.68);
+            -webkit-transform: translateY(-2px);
+            transform: translateY(-4px) translateX(15px);
+            font-size: 20px;
+            cursor: pointer;
         }
     }
 }

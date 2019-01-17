@@ -1,6 +1,4 @@
 @import '../../styles/mixin.scss';
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
 .Home {
     color: #ffffff;
@@ -12,7 +10,7 @@
     align-items: center;
 	background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Avenir', 'Fjalla One', sans-serif;
     &__container {
         width: 85%;
         display: grid;
