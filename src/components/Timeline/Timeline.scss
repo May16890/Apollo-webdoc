@@ -92,9 +92,15 @@
             position: absolute;
         }
     }
+    &__toggleBtn:hover {
+        border-color: #CC2F2F;
+    }
     &__openBtnContainer {
         display: flex;
         justify-content: space-between;
+    }
+    &__openBtnContainer:hover .timeline__openBtn__text {
+        color: #CC2F2F;
     }
     &__openBtn {
         border: 2px solid white;

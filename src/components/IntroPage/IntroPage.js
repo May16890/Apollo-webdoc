@@ -3,7 +3,7 @@ import './IntroPage.scss';
 import { Link } from 'react-router-dom';
 import Timeline from '../Timeline/Timeline';
 import bgIntro from '../../assets/img/Galaxy.png';
-import astroImg from '../../assets/img/Astronaute.png';
+import astroLongTuyauxImg from '../../assets/img/Astronaute_longtuyaux.png';
 
 class IntroPage extends Component {
   render() {
@@ -30,7 +30,7 @@ class IntroPage extends Component {
 
           </div>
         </div>
-        <img className="astroImg" alt="astroImg" src={astroImg}/>
+        <img className="astroImg" alt="astroImg" src={astroLongTuyauxImg}/>
       </section>
     );
   }
