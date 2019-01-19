@@ -11,7 +11,7 @@ class IntroPage extends Component {
       <section className="intro">
         <div className="blackOverlay"></div>
         <img className="bgIntro" alt="bgIntro" src={bgIntro}/>
-        <Timeline color='white'/>
+        <Timeline color='white' isClosed={false}/>
         <div className='intro__introContainer'>
           <Link className='intro__introContainer__homeLink' to='/'>Accueil</Link>
           <div className='intro__introContainer__wrapper'>

@@ -93,14 +93,14 @@
         }
     }
     &__toggleBtn:hover {
-        border-color: #CC2F2F;
+        border-color: #CC2F2F !important;
     }
     &__openBtnContainer {
         display: flex;
         justify-content: space-between;
     }
     &__openBtnContainer:hover .timeline__openBtn__text {
-        color: #CC2F2F;
+        color: #CC2F2F !important;
     }
     &__openBtn {
         border: 2px solid white;
