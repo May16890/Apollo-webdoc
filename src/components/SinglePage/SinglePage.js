@@ -7,10 +7,10 @@ class SinglePage extends Component {
   render() {
     return (
       <section>
-        <Link to='/intro'>BACK INTRO</Link>
+        <Timeline color='grey' />
+        {/* <Link to='/intro'>BACK INTRO</Link>
         <hr />
-        <h1 style={{ color: 'black', fontSize:'2em', }}>SINGLE PAGE {this.props.page}</h1>
-        <Timeline />
+        <h1 style={{ color: 'black', fontSize:'2em', }}>SINGLE PAGE {this.props.page}</h1> */}
       </section>
     );
   }
