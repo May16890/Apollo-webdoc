@@ -10,7 +10,6 @@ class Timeline extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        console.log(prevState.targets === this.state.targets)
         if (!prevState.isClosed && (prevState.targets === this.state.targets)) {
             this.setState({
                 isClosed: true,
