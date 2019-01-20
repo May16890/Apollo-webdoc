@@ -3,7 +3,24 @@ import './HomePage.scss';
 import { Link } from 'react-router-dom';
 
 class HomePage extends Component {
-    componentDidMount () {
+    componentDidMount() {
+        const scriptAstro = document.createElement("script");
+        const scriptLuz = document.createElement("script");
+        const scriptMouse = document.createElement("script");
+
+        scriptAstro.src = "./js/astro.js";
+        scriptAstro.async = true;
+
+        document.head.appendChild(scriptAstro);
+        
+        scriptLuz.src = "./js/luz.js";
+        scriptLuz.async = true;
+        document.head.appendChild(scriptLuz);
+        
+        scriptMouse.src = "./js/mouse.js";
+        scriptMouse.async = true;
+        document.head.appendChild(scriptMouse);
+
         const script = document.createElement("script");
 
         script.src = "./js/script.js";
