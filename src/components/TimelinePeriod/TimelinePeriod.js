@@ -25,7 +25,7 @@ class TimelinePeriod extends Component {
         const { link, text } = this.props;
         const isAppearClass = this.state.isAppear ? 'appear' : '';
         return (
-            <Link onMouseOver={this.textAppear} onMouseLeave={this.textDisappear} className='timeline__period' to={`${link}`}>
+            <Link style={{backgroundColor: this.props.color}} onMouseOver={this.textAppear} onMouseLeave={this.textDisappear} className='timeline__period' to={`${link}`}>
                 <span className={`timeline__period__text ${isAppearClass}`}>{text}</span>
             </Link>
         )
