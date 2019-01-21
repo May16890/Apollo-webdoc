@@ -16,21 +16,17 @@ function main() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.shadowMapEnabled = true;
     
-    // Eventos del raton
     MOUSE.initialize("#canvas");
 
-    // Añadir cámara
     camera.position.x = 0;
     camera.position.y = 0;
     camera.position.z = 20;
     camera.lookAt(scene.position);
 
-    // Añadir luz
     // var luzCamara = new Luz(0x555555, camera.position.x, camera.position.y, camera.position.z, true, "ambient");
     var luzCamara = new Luz(0xffffff, camera.position.x, camera.position.y, camera.position.z, true, "ambient");
     luzCamara.model(scene);
     
-    // Modelo
     sol = new Astro(6 / 2, "res/tierra.jpg", 0, 0, 0.002, false, true);
     sol.model();
     

@@ -3,23 +3,13 @@ import './HomePage.scss';
 import { Link } from 'react-router-dom';
 
 class HomePage extends Component {
-    componentDidMount() {
-        const scriptAstro = document.createElement("script");
-        const scriptLuz = document.createElement("script");
-        const scriptMouse = document.createElement("script");
+    componentDidMount () {
+        const bg = document.createElement("script");
 
-        scriptAstro.src = "./js/astro.js";
-        scriptAstro.async = true;
+        bg.src = "./js/bg.js";
+        bg.async = true;
 
-        document.head.appendChild(scriptAstro);
-        
-        scriptLuz.src = "./js/luz.js";
-        scriptLuz.async = true;
-        document.head.appendChild(scriptLuz);
-        
-        scriptMouse.src = "./js/mouse.js";
-        scriptMouse.async = true;
-        document.head.appendChild(scriptMouse);
+        document.body.appendChild(bg);
 
         const script = document.createElement("script");
 
@@ -33,6 +23,7 @@ class HomePage extends Component {
         return (
             <section className="Home">
                 <div id="canvas" style={{width:'100%',height:'100%',}}></div>
+                <canvas id='canvasBG' style={{position:"absolute", top:0, left:0, width:'100vw', height: '100vh', zIndex: -1}}></canvas>
                 <h1 style={{fontSize:'2.3em',position:'absolute',zIndex:9999,color:'white',top:80,}}>APOLLO PROJECT</h1>
                 <Link to='/intro' style={{border: '1px solid white',
                     fontSize: '1.2em',
