@@ -2,6 +2,7 @@
 Web documentaire sur le programme Apollo
 
 # Launch it:
+Paste this in your terminal:
 ```zsh
 git clone https://github.com/May16890/Apollo-webdoc.git
 cd Apollo-webdoc
