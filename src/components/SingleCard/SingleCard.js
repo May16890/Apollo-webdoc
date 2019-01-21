@@ -13,7 +13,7 @@ const SingleCard = props => {
         <div className='singlePage__cardsContainer__wrapper' onClick={props.onClick} style={style.wrapper}>
             <h2 className='singlePage__cardTitle' style={{opacity: style.title}}>{props.title}</h2>
             <div className={`singlePage__card ${style.card}`}>
-                <div style={{transition: 'ease-in-out 1s', background: 'red', width: `${style.cardContained}%`, height: `${style.cardContained}%`}}></div>
+                <div style={{transition: 'ease-in-out 1s', border: '1px solid rgba(0, 0, 0, .4)', width: `${style.cardContained}%`, height: `${style.cardContained}%`}}></div>
             </div>
         </div>
     );
