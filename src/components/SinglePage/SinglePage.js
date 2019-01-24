@@ -47,18 +47,19 @@ class SinglePage extends Component {
 
   render() {
     const { currentCard, fullscreen } = this.state;
+    const { page } = this.props;
     const marginLeft = 25 + (currentCard * -62.5);
     return (
       <section className='singlePage'>
         <Timeline color='grey' isClosed={true}/>
 
         <div className='singlePage__cardsContainer' style={{marginLeft: `${marginLeft}vw`}}>
-          <SingleCard title='GF' onClick={() => this.handleClickCard(0)} fullscreen={currentCard === 0 ? fullscreen : false} opacity={fullscreen && (currentCard !== 0) ? 0 : 1}/>
-          <SingleCard title='FF' onClick={() => this.handleClickCard(1)} fullscreen={currentCard === 1 ? fullscreen : false} opacity={fullscreen && (currentCard !== 1) ? 0 : 1}/>
-          <SingleCard title='WESH' onClick={() => this.handleClickCard(2)} fullscreen={currentCard === 2 ? fullscreen : false} opacity={fullscreen && (currentCard !== 2) ? 0 : 1}/>
-          <SingleCard title='GF' onClick={() => this.handleClickCard(3)} fullscreen={currentCard === 3 ? fullscreen : false} opacity={fullscreen && (currentCard !== 3) ? 0 : 1}/>
-          <SingleCard title='FF' onClick={() => this.handleClickCard(4)} fullscreen={currentCard === 4 ? fullscreen : false} opacity={fullscreen && (currentCard !== 4) ? 0 : 1}/>
-          <SingleCard title='WESH' onClick={() => this.handleClickCard(5)} fullscreen={currentCard === 5 ? fullscreen : false} opacity={fullscreen && (currentCard !== 5) ? 0 : 1}/>
+          <SingleCard title={page}onClick={() => this.handleClickCard(0)} fullscreen={currentCard === 0 ? fullscreen : false} opacity={fullscreen && (currentCard !== 0) ? 0 : 1}/>
+          <SingleCard title={page}onClick={() => this.handleClickCard(1)} fullscreen={currentCard === 1 ? fullscreen : false} opacity={fullscreen && (currentCard !== 1) ? 0 : 1}/>
+          <SingleCard title={page} onClick={() => this.handleClickCard(2)} fullscreen={currentCard === 2 ? fullscreen : false} opacity={fullscreen && (currentCard !== 2) ? 0 : 1}/>
+          <SingleCard title={page} onClick={() => this.handleClickCard(3)} fullscreen={currentCard === 3 ? fullscreen : false} opacity={fullscreen && (currentCard !== 3) ? 0 : 1}/>
+          <SingleCard title={page} onClick={() => this.handleClickCard(4)} fullscreen={currentCard === 4 ? fullscreen : false} opacity={fullscreen && (currentCard !== 4) ? 0 : 1}/>
+          <SingleCard title={page} onClick={() => this.handleClickCard(5)} fullscreen={currentCard === 5 ? fullscreen : false} opacity={fullscreen && (currentCard !== 5) ? 0 : 1}/>
         </div>
 
         <div className='singlePage__dotsContainer'>

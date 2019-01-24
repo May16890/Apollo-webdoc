@@ -1,0 +1,21 @@
+.Navettes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+    &__container {
+        height: 85vh;
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__navetteWrapper {
+        width: 33%;
+        height: 33%;
+        border: 1px solid rgba(0, 0, 0, .6);
+    }
+}

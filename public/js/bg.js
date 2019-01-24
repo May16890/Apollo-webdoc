@@ -1,5 +1,5 @@
 const startCanvas = () => {
-
+    
     const random = () => (Math.sin((Math.random() - 0.5) * Math.PI));
 
     const lerp = (from, to, progress) => ((1 - progress) * from + progress * to);
@@ -101,4 +101,4 @@ const startCanvas = () => {
     window.addEventListener('resize', resize);
 };
 
-startCanvas(); 
+startCanvas();
