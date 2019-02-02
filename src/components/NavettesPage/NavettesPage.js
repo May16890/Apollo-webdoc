@@ -146,15 +146,32 @@ class NavettesPage extends Component {
     })
   }
 
-  changeGlobalIndex = val => {
-    if (!this.state.isOpen) {
+  changeIndexes = val => {
+    const { isOpen, currGlobalIndex, currIndex } = this.state;
+
+    if (!isOpen) {
       this.setState({
-        currGlobalIndex: this.state.currGlobalIndex + val,
+        currGlobalIndex: currGlobalIndex + val,
+      })
+      return null;
+    }
+
+    if ((currIndex + val) < 0) {
+      this.setState({
+        currIndex: NavettesMockup[currGlobalIndex - 1].length - 1,
+        currGlobalIndex: currGlobalIndex - 1,
+      })
+      return null;
+    }
+    if ((currIndex + val) > 8) {
+      this.setState({
+        currIndex: 0,
+        currGlobalIndex: currGlobalIndex + 1,
       })
       return null;
     }
     this.setState({
-      currIndex: this.state.currIndex + val,
+      currIndex: currIndex + val,
     })
   }
 
@@ -172,7 +189,7 @@ class NavettesPage extends Component {
     const leftArrow = () => {
       if (!isOpen) {
         if (NavettesMockup[currGlobalIndex - 1]) {
-          return <div className='Navettes__leftArrow' onClick={() => this.changeGlobalIndex(-1)}>></div>
+          return <div className='Navettes__leftArrow' onClick={() => this.changeIndexes(-1)}>></div>
         } else {
           return null;
         }
@@ -180,7 +197,7 @@ class NavettesPage extends Component {
         if (currIndex === 0 && currGlobalIndex === 0) {
           return null;
         } else {
-          return <div className='Navettes__leftArrow' onClick={() => this.changeGlobalIndex(-1)}>></div>
+          return <div className='Navettes__leftArrow' onClick={() => this.changeIndexes(-1)}>></div>
         }
       }
     }
@@ -188,7 +205,7 @@ class NavettesPage extends Component {
     const rightArrow = () => {
       if (!isOpen) {
         if (NavettesMockup[currGlobalIndex + 1]) {
-          return <div className="Navettes__rightArrow" onClick={() => this.changeGlobalIndex(1)}>></div>
+          return <div className="Navettes__rightArrow" onClick={() => this.changeIndexes(1)}>></div>
         } else {
           return null;
         }
@@ -196,7 +213,7 @@ class NavettesPage extends Component {
         if ((currIndex === ((navetteTotal % 9) - 1)) && (currGlobalIndex === NavettesMockup.length - 1)) {
           return null;
         } else {
-          return <div className="Navettes__rightArrow" onClick={() => this.changeGlobalIndex(1)}>></div>
+          return <div className="Navettes__rightArrow" onClick={() => this.changeIndexes(1)}>></div>
         }
       }
     }
