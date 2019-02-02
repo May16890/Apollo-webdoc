@@ -6,7 +6,7 @@ import testImg from "../../assets/img/Astronaute.png";
 // import { Link } from 'react-router-dom';
 
 const NavettesMockup = [
-  {
+  [{
     name: "Blabla 1",
     src: testImg,
     desc: `Je suis un blabla e suis un blabla e suis un blabla 
@@ -86,8 +86,8 @@ const NavettesMockup = [
     Je suis un blabla e suis un blabla e suis un blabla 
     e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
     target: ['Premice', 3],
-  },
-  {
+  }],
+  [{
     name: "Blabla 10",
     src: testImg,
     desc: `Je suis un blabla e suis un blabla e suis un blabla 
@@ -122,7 +122,7 @@ const NavettesMockup = [
     Je suis un blabla e suis un blabla e suis un blabla 
     e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
     target: ['Premice', 3],
-  },
+  }]
 ]
 
 class NavettesPage extends Component {
@@ -133,6 +133,7 @@ class NavettesPage extends Component {
     desc: null,
     target: null,
     currIndex: 0,
+    currGlobalIndex: 0,
   }
 
   openModal = () => {
@@ -153,7 +154,11 @@ class NavettesPage extends Component {
   }
 
   render() {
-    const { isOpen, src, name, desc, target, currIndex } = this.state;
+    const { isOpen, src, name, desc, target, currIndex, currGlobalIndex } = this.state;
+
+    const navettes = NavettesMockup[currGlobalIndex].map((navette, index) => (
+      <Navette key={`navette__${index}`} name={navette.name} src={navette.src} desc={navette.desc} target={navette.target} handleClick={this.openModal}/>
+    ));
 
     return (
       <section className="Navettes">
@@ -161,15 +166,7 @@ class NavettesPage extends Component {
           {isOpen &&
             <NavetteModal src={src} name={name} desc={desc} target={target} currIndex={currIndex} closeModal={this.closeModal}/>
           }
-          <Navette name="truc1" src={testImg} handleClick={this.openModal}/>
-          <Navette name="truc2" src={testImg} />
-          <Navette name="truc3" src={testImg} />
-          <Navette name="truc4" src={testImg} />
-          <Navette name="truc5" src={testImg} />
-          <Navette name="truc6" src={testImg} />
-          <Navette name="truc7" src={testImg} />
-          <Navette name="truc8" src={testImg} />
-          <Navette name="truc9" src={testImg} />
+          {navettes}
         </div>
       </section>
     );
