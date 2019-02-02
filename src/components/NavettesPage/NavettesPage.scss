@@ -7,15 +7,25 @@
 
     &__container {
         height: 85vh;
-        width: 85%;
+        width: 75%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: start;
+        position: relative;
     }
 
-    &__navetteWrapper {
-        width: 33%;
-        height: 33%;
-        border: 1px solid rgba(0, 0, 0, .6);
+    &__leftArrow {
+        position: absolute;
+        left: 60px;
+        top: 50%;
+        transform: translateY(-50%) rotate(180deg);
+        cursor: pointer;
+    }
+    &__rightArrow {
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
     }
 }
