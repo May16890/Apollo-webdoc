@@ -128,22 +128,15 @@ const NavettesMockup = [
 class NavettesPage extends Component {
   state = {
     isOpen: false,
-    src: null,
-    name: null,
-    desc: null,
-    target: null,
     currIndex: 0,
     currGlobalIndex: 0,
+    navetteTotal: NavettesMockup.reduce((acc, valC) => acc + valC.length, 0)
   }
 
-  openModal = () => {
+  openModal = ({index}) => {
     this.setState({
       isOpen: true,
-      src: testImg,
-      name: 'truc1',
-      desc: NavettesMockup[0].desc,
-      target: 0,
-      currIndex: 0,
+      currIndex: index,
     })
   }
 
@@ -154,32 +147,70 @@ class NavettesPage extends Component {
   }
 
   changeGlobalIndex = val => {
+    if (!this.state.isOpen) {
+      this.setState({
+        currGlobalIndex: this.state.currGlobalIndex + val,
+      })
+      return null;
+    }
     this.setState({
-      currGlobalIndex: this.state.currGlobalIndex + val,
+      currIndex: this.state.currIndex + val,
     })
   }
 
+  goToSinglePage = () => {
+
+  }
+
   render() {
-    const { isOpen, src, name, desc, target, currIndex, currGlobalIndex } = this.state;
+    const { isOpen, currIndex, currGlobalIndex, navetteTotal } = this.state;
 
     const navettes = NavettesMockup[currGlobalIndex].map((navette, index) => (
-      <Navette key={`navette__${index}`} name={navette.name} src={navette.src} desc={navette.desc} target={navette.target} handleClick={this.openModal}/>
+      <Navette key={`navette__${index}`} index={index} name={navette.name} src={navette.src} desc={navette.desc} target={navette.target} handleClick={this.openModal}/>
     ));
+
+    const leftArrow = () => {
+      if (!isOpen) {
+        if (NavettesMockup[currGlobalIndex - 1]) {
+          return <div className='Navettes__leftArrow' onClick={() => this.changeGlobalIndex(-1)}>></div>
+        } else {
+          return null;
+        }
+      } else {
+        if (currIndex === 0 && currGlobalIndex === 0) {
+          return null;
+        } else {
+          return <div className='Navettes__leftArrow' onClick={() => this.changeGlobalIndex(-1)}>></div>
+        }
+      }
+    }
+
+    const rightArrow = () => {
+      if (!isOpen) {
+        if (NavettesMockup[currGlobalIndex + 1]) {
+          return <div className="Navettes__rightArrow" onClick={() => this.changeGlobalIndex(1)}>></div>
+        } else {
+          return null;
+        }
+      } else {
+        if ((currIndex === ((navetteTotal % 9) - 1)) && (currGlobalIndex === NavettesMockup.length - 1)) {
+          return null;
+        } else {
+          return <div className="Navettes__rightArrow" onClick={() => this.changeGlobalIndex(1)}>></div>
+        }
+      }
+    }
 
     return (
       <section className="Navettes">
-      {NavettesMockup[currGlobalIndex - 1] &&
-        <div className='Navettes__leftArrow' onClick={() => this.changeGlobalIndex(-1)}>></div>
-      }
+        {leftArrow()}
         <div className="Navettes__container">
           {isOpen &&
-            <NavetteModal src={src} name={name} desc={desc} target={target} currIndex={currIndex} closeModal={this.closeModal}/>
+            <NavetteModal data={NavettesMockup[currGlobalIndex][currIndex]} currIndex={currIndex} closeModal={this.closeModal} handleClick={this.goToSinglePage}/>
           }
           {navettes}
         </div>
-        {NavettesMockup[currGlobalIndex + 1] &&
-        <div className="Navettes__rightArrow" onClick={() => this.changeGlobalIndex(1)}>></div>
-        }
+        {rightArrow()}
       </section>
     );
   }

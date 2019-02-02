@@ -19,11 +19,13 @@
         left: 60px;
         top: 50%;
         transform: translateY(-50%) rotate(180deg);
+        cursor: pointer;
     }
     &__rightArrow {
         position: absolute;
         right: 60px;
         top: 50%;
         transform: translateY(-50%);
+        cursor: pointer;
     }
 }
