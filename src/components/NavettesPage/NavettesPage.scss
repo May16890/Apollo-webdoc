@@ -13,4 +13,17 @@
         justify-content: start;
         position: relative;
     }
+
+    &__leftArrow {
+        position: absolute;
+        left: 60px;
+        top: 50%;
+        transform: translateY(-50%) rotate(180deg);
+    }
+    &__rightArrow {
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }

@@ -153,6 +153,12 @@ class NavettesPage extends Component {
     })
   }
 
+  changeGlobalIndex = val => {
+    this.setState({
+      currGlobalIndex: this.state.currGlobalIndex + val,
+    })
+  }
+
   render() {
     const { isOpen, src, name, desc, target, currIndex, currGlobalIndex } = this.state;
 
@@ -162,12 +168,18 @@ class NavettesPage extends Component {
 
     return (
       <section className="Navettes">
+      {NavettesMockup[currGlobalIndex - 1] &&
+        <div className='Navettes__leftArrow' onClick={() => this.changeGlobalIndex(-1)}>></div>
+      }
         <div className="Navettes__container">
           {isOpen &&
             <NavetteModal src={src} name={name} desc={desc} target={target} currIndex={currIndex} closeModal={this.closeModal}/>
           }
           {navettes}
         </div>
+        {NavettesMockup[currGlobalIndex + 1] &&
+        <div className="Navettes__rightArrow" onClick={() => this.changeGlobalIndex(1)}>></div>
+        }
       </section>
     );
   }
