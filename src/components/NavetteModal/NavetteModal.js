@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './NavetteModal.scss';
 
 const NavetteModal = ({data, handleClick, closeModal}) => {
@@ -13,7 +14,7 @@ const NavetteModal = ({data, handleClick, closeModal}) => {
             </div>
             <h3 className="navetteModal__name">{name}</h3>
             <p className="navetteModal__desc">{desc}</p>
-            <button className="navetteModal__btn" onClick={() => handleClick(target)}>CTA</button>
+            <Link to={{ pathname: `/singlePage/${target[0]}`, state: { currentCard: target[1]} }} className="navetteModal__btn">CTA</Link>
         </div>
     )
 }

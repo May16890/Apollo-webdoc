@@ -175,10 +175,6 @@ class NavettesPage extends Component {
     })
   }
 
-  goToSinglePage = () => {
-
-  }
-
   render() {
     const { isOpen, currIndex, currGlobalIndex, navetteTotal } = this.state;
 
@@ -223,7 +219,7 @@ class NavettesPage extends Component {
         {leftArrow()}
         <div className="Navettes__container">
           {isOpen &&
-            <NavetteModal data={NavettesMockup[currGlobalIndex][currIndex]} currIndex={currIndex} closeModal={this.closeModal} handleClick={this.goToSinglePage}/>
+            <NavetteModal data={NavettesMockup[currGlobalIndex][currIndex]} currIndex={currIndex} closeModal={this.closeModal}/>
           }
           {navettes}
         </div>

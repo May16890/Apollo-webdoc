@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './SinglePage.scss';
-// import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import Timeline from '../Timeline/Timeline';
 import SingleCard from '../SingleCard/SingleCard';
 
 class SinglePage extends Component {
   state = {
-    currentCard: 0,
+    currentCard: this.props.location.state ? this.props.location.state.currentCard : 0,
     fullscreen: false,
   }
 
@@ -76,4 +76,4 @@ class SinglePage extends Component {
   }
 }
 
-export default SinglePage;
+export default withRouter(SinglePage);
