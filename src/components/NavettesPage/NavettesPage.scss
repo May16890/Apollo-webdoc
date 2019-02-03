@@ -10,8 +10,8 @@
         width: 75%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
         position: relative;
+        align-content: flex-start;
     }
     &__leftArrow {
         position: absolute;
