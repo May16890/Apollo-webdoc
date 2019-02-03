@@ -3,6 +3,7 @@ import './SinglePage.scss';
 import { withRouter } from 'react-router-dom';
 import Timeline from '../Timeline/Timeline';
 import SingleCard from '../SingleCard/SingleCard';
+import { Link } from 'react-router-dom';
 
 class SinglePage extends Component {
   state = {
@@ -71,6 +72,7 @@ class SinglePage extends Component {
           <div className={`singlePage__dot ${currentCard === 5 ? 'redDot' : ''}`} onClick={() => this.handleClickDot(5)}></div>
           <span className='singlePage__closeFS' style={fullscreen ? {opacity: 1} : {opacity: 0}} onClick={this.closeFS}>FERMER</span>
         </div>
+        <Link className="Navettes__inroLink" to='/intro' style={{position: 'absolute', bottom: 20, right: 20}}>Intro</Link>
       </section>
     );
   }

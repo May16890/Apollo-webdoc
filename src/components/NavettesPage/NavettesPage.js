@@ -3,7 +3,7 @@ import './NavettesPage.scss';
 import Navette from '../Navette/Navette';
 import NavetteModal from '../NavetteModal/NavetteModal';
 import testImg from "../../assets/img/Astronaute.png";
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const NavettesMockup = [
   [{
@@ -224,6 +224,7 @@ class NavettesPage extends Component {
           {navettes}
         </div>
         {rightArrow()}
+        <Link className="Navettes__inroLink" to='/intro' style={{position: 'absolute', bottom: 20, right: 20}}>Intro</Link>
       </section>
     );
   }
