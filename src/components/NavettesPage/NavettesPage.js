@@ -2,128 +2,8 @@ import React, { Component } from 'react';
 import './NavettesPage.scss';
 import Navette from '../Navette/Navette';
 import NavetteModal from '../NavetteModal/NavetteModal';
-import testImg from "../../assets/img/Astronaute.png";
-// import { Link } from 'react-router-dom';
-
-const NavettesMockup = [
-  [{
-    name: "Blabla 1",
-    src: testImg,
-    desc: `Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
-    Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-    target: ['Premice', 3],
-  },
-  {
-    name: "Blabla 2",
-    src: testImg,
-    desc: `Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
-    Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-    target: ['Premice', 3],
-  },
-  {
-    name: "Blabla 3",
-    src: testImg,
-    desc: `Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
-    Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-    target: ['Premice', 3],
-  },
-  {
-    name: "Blabla 4",
-    src: testImg,
-    desc: `Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
-    Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-    target: ['Premice', 3],
-  },
-  {
-    name: "Blabla 5",
-    src: testImg,
-    desc: `Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
-    Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-    target: ['Premice', 3],
-  },
-  {
-    name: "Blabla 6",
-    src: testImg,
-    desc: `Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
-    Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-    target: ['Premice', 3],
-  },
-  {
-    name: "Blabla 7",
-    src: testImg,
-    desc: `Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
-    Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-    target: ['Premice', 3],
-  },
-  {
-    name: "Blabla 8",
-    src: testImg,
-    desc: `Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
-    Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-    target: ['Premice', 3],
-  },
-  {
-    name: "Blabla 9",
-    src: testImg,
-    desc: `Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
-    Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-    target: ['Premice', 3],
-  }],
-  [{
-    name: "Blabla 10",
-    src: testImg,
-    desc: `Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
-    Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-    target: ['Premice', 3],
-  },
-  {
-    name: "Blabla 11",
-    src: testImg,
-    desc: `Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
-    Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-    target: ['Premice', 3],
-  },
-  {
-    name: "Blabla 12",
-    src: testImg,
-    desc: `Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
-    Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-    target: ['Premice', 3],
-  },
-  {
-    name: "Blabla 13",
-    src: testImg,
-    desc: `Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
-    Je suis un blabla e suis un blabla e suis un blabla 
-    e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-    target: ['Premice', 3],
-  }]
-]
+import { Link } from 'react-router-dom';
+import NavettesMockup from '../../datas/navettesPage.js';
 
 class NavettesPage extends Component {
   state = {
@@ -185,7 +65,15 @@ class NavettesPage extends Component {
     const leftArrow = () => {
       if (!isOpen) {
         if (NavettesMockup[currGlobalIndex - 1]) {
-          return <div className='Navettes__leftArrow' onClick={() => this.changeIndexes(-1)}>></div>
+          return <div className='Navettes__leftArrow' onClick={() => this.changeIndexes(-1)}>
+                    <svg version="1.1" width="40px" height="40px" viewBox="0 0 451.846 451.847">
+                      <g>
+                      <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                        L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                        c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/>
+                      </g>
+                    </svg>
+                  </div>
         } else {
           return null;
         }
@@ -193,7 +81,15 @@ class NavettesPage extends Component {
         if (currIndex === 0 && currGlobalIndex === 0) {
           return null;
         } else {
-          return <div className='Navettes__leftArrow' onClick={() => this.changeIndexes(-1)}>></div>
+          return <div className='Navettes__leftArrow' onClick={() => this.changeIndexes(-1)}>
+                    <svg version="1.1" width="40px" height="40px" viewBox="0 0 451.846 451.847">
+                      <g>
+                      <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                        L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                        c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/>
+                      </g>
+                    </svg>
+                  </div>
         }
       }
     }
@@ -201,7 +97,15 @@ class NavettesPage extends Component {
     const rightArrow = () => {
       if (!isOpen) {
         if (NavettesMockup[currGlobalIndex + 1]) {
-          return <div className="Navettes__rightArrow" onClick={() => this.changeIndexes(1)}>></div>
+          return <div className='Navettes__rightArrow' onClick={() => this.changeIndexes(1)}>
+                    <svg version="1.1" width="40px" height="40px" viewBox="0 0 451.846 451.847">
+                      <g>
+                      <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                        L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                        c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/>
+                      </g>
+                    </svg>
+                  </div>
         } else {
           return null;
         }
@@ -209,7 +113,15 @@ class NavettesPage extends Component {
         if ((currIndex === ((navetteTotal % 9) - 1)) && (currGlobalIndex === NavettesMockup.length - 1)) {
           return null;
         } else {
-          return <div className="Navettes__rightArrow" onClick={() => this.changeIndexes(1)}>></div>
+          return <div className='Navettes__rightArrow' onClick={() => this.changeIndexes(1)}>
+                    <svg version="1.1" width="40px" height="40px" viewBox="0 0 451.846 451.847">
+                      <g>
+                      <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                        L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                        c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/>
+                      </g>
+                    </svg>
+                  </div>
         }
       }
     }
@@ -224,6 +136,7 @@ class NavettesPage extends Component {
           {navettes}
         </div>
         {rightArrow()}
+        <Link className="Navettes__inroLink" to='/intro' style={{position: 'absolute', bottom: 20, right: 20}}>Intro</Link>
       </section>
     );
   }

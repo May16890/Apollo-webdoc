@@ -13,7 +13,8 @@ class IntroPage extends Component {
         <img className="bgIntro" alt="bgIntro" src={bgIntro}/>
         <Timeline color='white' isClosed={false}/>
         <div className='intro__introContainer'>
-          <Link className='intro__introContainer__homeLink' to='/'>Accueil</Link>
+          {/* <Link className='intro__introContainer__homeLink' to='/'>Accueil</Link> */}
+          <a className='intro__introContainer__homeLink' href='/'>Accueil</a>
           <div className='intro__introContainer__wrapper'>
             <h1 className='intro__introContainer__title'>BIENVENUE À BORD</h1>
             <h2 className='intro__introContainer__subtitle'>APOLLO VOUS ATTENDS</h2>
