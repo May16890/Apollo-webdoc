@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 import Timeline from '../Timeline/Timeline';
 import SingleCard from '../SingleCard/SingleCard';
 import { Link } from 'react-router-dom';
+import erasDatas from '../../datas/singlePage.js';
 
 class SinglePage extends Component {
   state = {
@@ -50,6 +51,8 @@ class SinglePage extends Component {
     const { currentCard, fullscreen } = this.state;
     const { page } = this.props;
     const marginLeft = 25 + (currentCard * -62.5);
+
+    console.log(erasDatas);
     return (
       <section className='singlePage'>
         <Timeline color='grey' isClosed={true}/>
