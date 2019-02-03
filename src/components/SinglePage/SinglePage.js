@@ -52,27 +52,24 @@ class SinglePage extends Component {
     const { page } = this.props;
     const marginLeft = 25 + (currentCard * -62.5);
 
-    console.log(erasDatas);
+    const singleCards = erasDatas[page].map((singleCard, index) => (
+      <SingleCard key={`singleCard__${index}`} title={page} onClick={() => this.handleClickCard(index)} fullscreen={currentCard === index ? fullscreen : false} opacity={fullscreen && (currentCard !== index) ? 0 : 1} singleCard={singleCard}/>
+    ));
+
+    const dots = erasDatas[page].map((dot, index) => (
+      <div key={`dot__${index}`} className={`singlePage__dot ${currentCard === index ? 'redDot' : ''}`} onClick={() => this.handleClickDot(index)}></div>
+    ));
+
     return (
       <section className='singlePage'>
         <Timeline color='grey' isClosed={true}/>
 
         <div className='singlePage__cardsContainer' style={{marginLeft: `${marginLeft}vw`}}>
-          <SingleCard title={page}onClick={() => this.handleClickCard(0)} fullscreen={currentCard === 0 ? fullscreen : false} opacity={fullscreen && (currentCard !== 0) ? 0 : 1}/>
-          <SingleCard title={page}onClick={() => this.handleClickCard(1)} fullscreen={currentCard === 1 ? fullscreen : false} opacity={fullscreen && (currentCard !== 1) ? 0 : 1}/>
-          <SingleCard title={page} onClick={() => this.handleClickCard(2)} fullscreen={currentCard === 2 ? fullscreen : false} opacity={fullscreen && (currentCard !== 2) ? 0 : 1}/>
-          <SingleCard title={page} onClick={() => this.handleClickCard(3)} fullscreen={currentCard === 3 ? fullscreen : false} opacity={fullscreen && (currentCard !== 3) ? 0 : 1}/>
-          <SingleCard title={page} onClick={() => this.handleClickCard(4)} fullscreen={currentCard === 4 ? fullscreen : false} opacity={fullscreen && (currentCard !== 4) ? 0 : 1}/>
-          <SingleCard title={page} onClick={() => this.handleClickCard(5)} fullscreen={currentCard === 5 ? fullscreen : false} opacity={fullscreen && (currentCard !== 5) ? 0 : 1}/>
+          {singleCards}
         </div>
 
         <div className='singlePage__dotsContainer'>
-          <div className={`singlePage__dot ${currentCard === 0 ? 'redDot' : ''}`} onClick={() => this.handleClickDot(0)}></div>
-          <div className={`singlePage__dot ${currentCard === 1 ? 'redDot' : ''}`} onClick={() => this.handleClickDot(1)}></div>
-          <div className={`singlePage__dot ${currentCard === 2 ? 'redDot' : ''}`} onClick={() => this.handleClickDot(2)}></div>
-          <div className={`singlePage__dot ${currentCard === 3 ? 'redDot' : ''}`} onClick={() => this.handleClickDot(3)}></div>
-          <div className={`singlePage__dot ${currentCard === 4 ? 'redDot' : ''}`} onClick={() => this.handleClickDot(4)}></div>
-          <div className={`singlePage__dot ${currentCard === 5 ? 'redDot' : ''}`} onClick={() => this.handleClickDot(5)}></div>
+          {dots}
           <span className='singlePage__closeFS' style={fullscreen ? {opacity: 1} : {opacity: 0}} onClick={this.closeFS}>FERMER</span>
         </div>
         <Link className="Navettes__inroLink" to='/intro' style={{position: 'absolute', bottom: 20, right: 20}}>Intro</Link>
