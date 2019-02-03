@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TweenLite, { TimelineMax } from 'gsap/TweenMax';
+import { TimelineMax } from 'gsap/TweenMax';
 import './HomePage.scss';
 import { Link } from 'react-router-dom';
 
@@ -45,7 +45,7 @@ class HomePage extends Component {
         tl = new TimelineMax({delay: 9});
         tl.to(bgBlack, 1, {display: "none"});
         
-        tl = new TimelineMax({delay: 16});
+        tl = new TimelineMax({delay: 14});
         tl.to(button, 1, {opacity: 1, bottom: '80px'});
         
     }

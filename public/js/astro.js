@@ -52,13 +52,24 @@ function Astro (radio, urlTextura, distancia, velRotOrb, velRot, stoppable, luz)
     };
     
     this.animate = function () {        
-        if(!this.stoppable || !MOUSE.click) {
-            this.tgRotOrb.rotation.y += this.velRotOrb;
-        } else {
-            this.tgRotOrb.rotation.y += 0;    
+        if (this.urlTextura === 'res/luna.jpg') {
+            if(!this.stoppable || !MOUSE.click) {
+                this.tgRotOrb.rotation.y += (this.velRotOrb * 6);
+            } else {
+                this.tgRotOrb.rotation.y += 0;
+            }
+            this.tgDis.position.x = this.distancia;
+            this.tgRot.rotation.y += this.velRot;
         }
-        this.tgDis.position.x = this.distancia;
-        this.tgRot.rotation.y += this.velRot;
+        if (this.urlTextura === 'res/tierra.jpg') {
+            if(!this.stoppable || !MOUSE.click) {
+                this.tgRotOrb.rotation.y += this.velRotOrb;
+            } else {
+                this.tgRotOrb.rotation.y += 0;
+            }
+            this.tgDis.position.x = this.distancia;
+            this.tgRot.rotation.y += (this.velRot / 2);
+        }
     };
     
     this.addSatelite = function (satelite) {
