@@ -36,47 +36,95 @@ const erasDatas = {
     apollo1: [
         [
             ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
-            ['img', "../path/to/image.png"],
+            ['img', testImg],
+            ['img', testImg],
             ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
-            ['vid', "../path/to/video.png"],
         ],
         [
             ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
-            ['img', "../path/to/image.png"],
+            ['img', testImg],
+            ['img', testImg],
             ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
-            ['vid', "../path/to/video.png"],
         ],
     ],
     apollo2: [
         [
             ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
-            ['img', "../path/to/image.png"],
+            ['img', testImg],
+            ['img', testImg],
             ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
-            ['vid', "../path/to/video.png"],
+        ],
+        [
+            ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
+            ['img', testImg],
+            ['img', testImg],
+            ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
+        ],
+        [
+            ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
+            ['img', testImg],
+            ['img', testImg],
+            ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
         ],
     ],
     apollo3: [
         [
             ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
-            ['img', "../path/to/image.png"],
+            ['img', testImg],
+            ['img', testImg],
             ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
-            ['vid', "../path/to/video.png"],
+        ],
+        [
+            ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
+            ['img', testImg],
+            ['img', testImg],
+            ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
+        ],
+        [
+            ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
+            ['img', testImg],
+            ['img', testImg],
+            ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
+        ],
+        [
+            ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
+            ['img', testImg],
+            ['img', testImg],
+            ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
         ],
     ],
     apolloSoyuz: [
         [
             ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
-            ['img', "../path/to/image.png"],
+            ['img', testImg],
+            ['img', testImg],
             ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
-            ['vid', "../path/to/video.png"],
+        ],
+        [
+            ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
+            ['img', testImg],
+            ['img', testImg],
+            ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
         ],
     ],
     today: [
         [
             ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
-            ['img', "../path/to/image.png"],
+            ['img', testImg],
+            ['img', testImg],
             ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
-            ['vid', "../path/to/video.png"],
+        ],
+        [
+            ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
+            ['img', testImg],
+            ['img', testImg],
+            ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
+        ],
+        [
+            ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
+            ['img', testImg],
+            ['img', testImg],
+            ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
         ],
     ]
 };

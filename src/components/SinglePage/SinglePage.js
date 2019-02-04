@@ -52,6 +52,9 @@ class SinglePage extends Component {
     const { page } = this.props;
     const marginLeft = 25 + (currentCard * -62.5);
 
+console.log(page)
+console.log(erasDatas[page])
+
     const singleCards = erasDatas[page].map((singleCard, index) => (
       <SingleCard key={`singleCard__${index}`} title={page} onClick={() => this.handleClickCard(index)} fullscreen={currentCard === index ? fullscreen : false} opacity={fullscreen && (currentCard !== index) ? 0 : 1} singleCard={singleCard}/>
     ));
