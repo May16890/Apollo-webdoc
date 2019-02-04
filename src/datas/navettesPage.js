@@ -8,7 +8,7 @@ const NavettesMockup = [
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
         Je suis un blabla e suis un blabla e suis un blabla 
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-        target: ['Premice', 3],
+        target: ['premice', 1],
     },
     {
         name: "Blabla 2",
@@ -17,7 +17,7 @@ const NavettesMockup = [
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
         Je suis un blabla e suis un blabla e suis un blabla 
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-        target: ['Premice', 3],
+        target: ['premice', 2],
     },
     {
         name: "Blabla 3",
@@ -26,7 +26,7 @@ const NavettesMockup = [
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
         Je suis un blabla e suis un blabla e suis un blabla 
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-        target: ['Premice', 3],
+        target: ['premice', 3],
     },
     {
         name: "Blabla 4",
@@ -35,7 +35,7 @@ const NavettesMockup = [
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
         Je suis un blabla e suis un blabla e suis un blabla 
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-        target: ['Premice', 3],
+        target: ['premice', 3],
     },
     {
         name: "Blabla 5",
@@ -44,7 +44,7 @@ const NavettesMockup = [
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
         Je suis un blabla e suis un blabla e suis un blabla 
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-        target: ['Premice', 3],
+        target: ['premice', 3],
     },
     {
         name: "Blabla 6",
@@ -53,7 +53,7 @@ const NavettesMockup = [
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
         Je suis un blabla e suis un blabla e suis un blabla 
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-        target: ['Premice', 3],
+        target: ['premice', 3],
     },
     {
         name: "Blabla 7",
@@ -62,7 +62,7 @@ const NavettesMockup = [
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
         Je suis un blabla e suis un blabla e suis un blabla 
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-        target: ['Premice', 3],
+        target: ['premice', 3],
     },
     {
         name: "Blabla 8",
@@ -71,7 +71,7 @@ const NavettesMockup = [
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
         Je suis un blabla e suis un blabla e suis un blabla 
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-        target: ['Premice', 3],
+        target: ['premice', 3],
     },
     {
         name: "Blabla 9",
@@ -80,7 +80,7 @@ const NavettesMockup = [
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
         Je suis un blabla e suis un blabla e suis un blabla 
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-        target: ['Premice', 3],
+        target: ['premice', 3],
     }],
     [{
         name: "Blabla 10",
@@ -89,7 +89,7 @@ const NavettesMockup = [
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
         Je suis un blabla e suis un blabla e suis un blabla 
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-        target: ['Premice', 3],
+        target: ['premice', 3],
     },
     {
         name: "Blabla 11",
@@ -98,7 +98,7 @@ const NavettesMockup = [
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
         Je suis un blabla e suis un blabla e suis un blabla 
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-        target: ['Premice', 3],
+        target: ['premice', 3],
     },
     {
         name: "Blabla 12",
@@ -107,7 +107,7 @@ const NavettesMockup = [
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
         Je suis un blabla e suis un blabla e suis un blabla 
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-        target: ['Premice', 3],
+        target: ['premice', 3],
     },
     {
         name: "Blabla 13",
@@ -116,7 +116,7 @@ const NavettesMockup = [
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla 
         Je suis un blabla e suis un blabla e suis un blabla 
         e suis un blabla e suis un blabla e suis un blabla e suis un blabla `,
-        target: ['Premice', 3],
+        target: ['premice', 3],
     }]
 ]
 
