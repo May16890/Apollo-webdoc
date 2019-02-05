@@ -104,7 +104,7 @@
         border: 1px solid white;
         font-size: 1.8em;
         letter-spacing: .2em;
-        color:white;
+        color: white;
         padding: .4em .8em;
         display: flex;
         justify-content: center;
@@ -116,6 +116,12 @@
         z-index: 999;
         bottom: 60px;
         opacity: 0;
+        transition: .2s ease-in-out;
+    }
+    &__button:hover {
+        background: rgba(255, 255, 255, .8);
+        border: 1px solid rgba(255, 255, 255, .8);
+        color: black;
     }
 }
 
