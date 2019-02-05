@@ -2,12 +2,18 @@
     &__navetteWrapper {
         width: 33%;
         height: 33%;
-        border: 1px solid rgba(0, 0, 0, .2);
+        border: 1px solid rgba(255, 255, 255, .7);
+        background: rgba(255, 255, 255, .1);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        color: rgba(255, 255, 255, .8);
+        transition: .2s ease-in-out;
+    }
+    &__navetteWrapper:hover {
+        background: rgba(0, 0, 0, 0.1);
     }
     &__imgWrapper {
         width: 40%;

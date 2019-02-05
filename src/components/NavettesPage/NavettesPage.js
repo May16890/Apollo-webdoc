@@ -4,6 +4,7 @@ import Navette from '../Navette/Navette';
 import NavetteModal from '../NavetteModal/NavetteModal';
 import { Link } from 'react-router-dom';
 import NavettesMockup from '../../datas/navettesPage.js';
+import bgIntro from '../../assets/img/Galaxy.png';
 
 class NavettesPage extends Component {
   state = {
@@ -128,6 +129,8 @@ class NavettesPage extends Component {
 
     return (
       <section className="Navettes">
+        <div className="blackOverlay"></div>
+        <img className="bgIntro" alt="bgIntro" src={bgIntro}/>
         {leftArrow()}
         <div className="Navettes__container">
           {isOpen &&
