@@ -58,9 +58,10 @@ class NavettesPage extends Component {
 
   render() {
     const { isOpen, currIndex, currGlobalIndex, navetteTotal } = this.state;
+    const styled = isOpen ? {display: 'none'} : {};
 
     const navettes = NavettesMockup[currGlobalIndex].map((navette, index) => (
-      <Navette key={`navette__${index}`} index={index} name={navette.name} src={navette.src} desc={navette.desc} target={navette.target} handleClick={this.openModal}/>
+      <Navette styled={styled} key={`navette__${index}`} index={index} name={navette.name} src={navette.src} desc={navette.desc} target={navette.target} handleClick={this.openModal}/>
     ));
 
     const leftArrow = () => {
@@ -139,7 +140,7 @@ class NavettesPage extends Component {
           {navettes}
         </div>
         {rightArrow()}
-        <Link className="Navettes__inroLink" to='/intro' style={{position: 'absolute', bottom: 20, right: 20}}>Intro</Link>
+        <Link className="Navettes__inroLink" to='/intro'>Retour</Link>
       </section>
     );
   }

@@ -4,10 +4,20 @@
     align-items: center;
     height: 100vh;
     width: 100%;
+    font-family: 'Avenir', 'Fjalla One', sans-serif;
 
+    &__inroLink {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    &__inroLink:hover {
+        color: rgba(255, 255, 255, 0.6);
+    }
     &__container {
         height: 85vh;
-        width: 75%;
+        width: 65%;
         display: flex;
         flex-wrap: wrap;
         position: relative;
@@ -15,17 +25,23 @@
     }
     &__leftArrow {
         position: absolute;
-        left: 60px;
+        left: 12.5vw;
         top: 50%;
         transform: translateY(-50%) rotate(180deg);
         cursor: pointer;
+        fill: rgba(255, 255, 255, 0.3);
     }
     &__rightArrow {
         position: absolute;
-        right: 60px;
+        right: 12.5vw;
         top: 50%;
         transform: translateY(-50%);
         cursor: pointer;
+        fill: rgba(255, 255, 255, 0.3);
+    }
+    &__rightArrow:hover, &__leftArrow:hover {
+        fill: rgba(255, 255, 255, 0.6);
+
     }
 }
 
@@ -39,7 +55,7 @@
 }
 
 .blackOverlay {
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .1);
     height: 100vh;
     width: 100%;
     position: absolute;
