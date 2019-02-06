@@ -37,7 +37,7 @@ class AstronautesPage extends Component {
       <section className="Home">
         <div className="blackOverlay"></div>
         <img className="bgIntro" alt="bgIntro" src={bgIntro}/>
-        <h1 style={{ color: 'rgba(255 ,255, 255, 0.9)', display:'flex', alignItems:'center', justifyContent:'center', position: 'absolute', fontWeight: '500', top: 40, fontSize:'1.8em'}}>PILOTES APOLLO</h1> 
+        <h1 style={{ color: 'rgba(255 ,255, 255, 0.9)', display:'flex', alignItems:'center', justifyContent:'center', position: 'absolute', fontWeight: '500', top: 40, fontSize:'1.8em'}}>PILOTES NASA</h1> 
         <div className="astronautesPage__cardsContainer"> 
         <div className="bgBehind"></div>
      
