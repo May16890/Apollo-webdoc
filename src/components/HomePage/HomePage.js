@@ -29,24 +29,24 @@ class HomePage extends Component {
         const title = document.getElementsByClassName("Home__titleWrapper");
         const button = document.getElementsByClassName("Home__button");
 
-        let tl = new TimelineMax({delay: 3});
+        let tl = new TimelineMax({delay: 1});
         tl.to(welcome, 2, {opacity: 0, top: '35%'})
 
-        tl = new TimelineMax({delay: 3});
+        tl = new TimelineMax({delay: 1});
         tl.to(toThe, 1, {opacity: 1, top: '50%'})
 
-        tl = new TimelineMax({delay: 6});
+        tl = new TimelineMax({delay: 3});
         tl.to(toThe, 1, {opacity: 0});
 
-        tl = new TimelineMax({delay: 8});
+        tl = new TimelineMax({delay: 4});
         tl.to(bgBlack, 1, {opacity: 0});
-        tl.to(title, 3, {top: '80px'});
+        tl.to(title, 2.5, {top: '80px'});
         
-        tl = new TimelineMax({delay: 9});
+        tl = new TimelineMax({delay: 5});
         tl.to(bgBlack, 1, {display: "none"});
         
-        tl = new TimelineMax({delay: 14});
-        tl.to(button, 1, {opacity: 1, bottom: '80px'});
+        tl = new TimelineMax({delay: 7});
+        tl.to(button, 1.5, {opacity: 1});
         
     }
 

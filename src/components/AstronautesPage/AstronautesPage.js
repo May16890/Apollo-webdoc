@@ -6,6 +6,8 @@ import { ViewPager, Frame, Track, View } from 'react-view-pager';
 import AstronautesCard from '../AstronautesCard/AstronautesCard';
 import AstronautesMockup from '../../datas/astronautesPage';
 
+import bgIntro from '../../assets/img/Galaxy.png';
+
 const animations = [
   // {
   //   prop: 'scale',
@@ -26,29 +28,34 @@ class AstronautesPage extends Component {
     const { currGlobalIndex } = this.state;
 
     const astronautes = AstronautesMockup[currGlobalIndex].map((astronaute, index) => (
-      <AstronautesCard key={`astronaute__${index}`} index={index} name={astronaute.name} src={astronaute.src} mission={astronaute.mission} date={astronaute.date} target={astronaute.target}/>
+      <View key={`astronaute__${index}`}>
+        <AstronautesCard index={index} name={astronaute.name} src={astronaute.src} mission={astronaute.mission} date={astronaute.date} target={astronaute.target}/>
+      </View>
     ));
 
     return (
       <section className="Home">
+        <div className="blackOverlay"></div>
+        <img className="bgIntro" alt="bgIntro" src={bgIntro}/>
+        <h1 style={{ color: 'rgba(255 ,255, 255, 0.9)', display:'flex', alignItems:'center', justifyContent:'center', position: 'absolute', fontWeight: '500', top: 40, fontSize:'1.8em'}}>PILOTES APOLLO</h1> 
         <div className="astronautesPage__cardsContainer"> 
-        <h1 style={{ color: 'black', display:'flex', alignItems:'center', justifyContent:'center'}}>ASTRONAUTES</h1> 
+        <div className="bgBehind"></div>
      
 
        
-        <ViewPager style={{ marginTop: '15vh', marginBottom:'30vh'}}>
+        <ViewPager>
           <Frame style={{margin: '0 auto',outline: 0}}>
-            <Track viewsToShow="auto" align={0.5} animations={animations}>
-              <View>
+            <Track viewsToShow="auto" align={0.4} animations={animations}>
+              {/* <View className='astronautesContainer'> */}
                 {astronautes}
-              </View>
+              {/* </View> */}
             </Track>
           </Frame>
         </ViewPager>
         
 
-        <Link to='/intro' style={{display:'flex', alignSelf:'center', justifyContent:'center'}}>BACK TO INTRO</Link> 
         </div>
+        <Link to='/intro' className='introLink'>Retour</Link> 
       </section>
     );
   }

@@ -6,10 +6,33 @@ import SingleCard from '../SingleCard/SingleCard';
 import { Link } from 'react-router-dom';
 import erasDatas from '../../datas/singlePage.js';
 
+var scrollDir = true;
+var isScrolling;
+
 class SinglePage extends Component {
   state = {
     currentCard: this.props.location.state ? this.props.location.state.currentCard : 0,
     fullscreen: false,
+  }
+
+  handleScroll = event => {
+    if (scrollDir) {
+      if (event.deltaY < 0 ) {
+        this.setState({
+          currentCard: this.state.currentCard === 0 ? this.state.currentCard : this.state.currentCard - 1,
+        })
+      }
+      if (event.deltaY > 0 ) {
+        this.setState({
+          currentCard: this.state.currentCard === erasDatas[this.props.page].length - 1 ? this.state.currentCard : this.state.currentCard + 1,
+        })
+      }
+    }
+    scrollDir = false;
+    window.clearTimeout( isScrolling );
+    isScrolling = setTimeout(() => {
+      scrollDir = true;
+    }, 66);
   }
 
   componentDidUpdate(prevProps) {
@@ -52,8 +75,8 @@ class SinglePage extends Component {
     const { page } = this.props;
     const marginLeft = 25 + (currentCard * -62.5);
 
-console.log(page)
-console.log(erasDatas[page])
+    console.log(page)
+    console.log(erasDatas[this.props.page].length)
 
     const singleCards = erasDatas[page].map((singleCard, index) => (
       <SingleCard key={`singleCard__${index}`} title={page} onClick={() => this.handleClickCard(index)} fullscreen={currentCard === index ? fullscreen : false} opacity={fullscreen && (currentCard !== index) ? 0 : 1} singleCard={singleCard}/>
@@ -64,7 +87,7 @@ console.log(erasDatas[page])
     ));
 
     return (
-      <section className='singlePage'>
+      <section className='singlePage' onWheel={event => this.handleScroll(event)}>
         <Timeline color='grey' isClosed={true}/>
 
         <div className='singlePage__cardsContainer' style={{marginLeft: `${marginLeft}vw`}}>
@@ -75,7 +98,7 @@ console.log(erasDatas[page])
           {dots}
           <span className='singlePage__closeFS' style={fullscreen ? {opacity: 1} : {opacity: 0}} onClick={this.closeFS}>FERMER</span>
         </div>
-        <Link className="Navettes__inroLink" to='/intro' style={{position: 'absolute', bottom: 20, right: 20}}>Intro</Link>
+        <Link className="Navettes__inroLin" to='/intro' style={{position: 'absolute', bottom: 20, right: 20}}>Retour</Link>
       </section>
     );
   }

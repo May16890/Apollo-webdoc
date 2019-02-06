@@ -1,4 +1,4 @@
-import testImg from "../assets/img/Astronaute.png";
+import testImg from "../assets/img/ApolloSoyuz3.png";
 
 const NavettesMockup = [
     [{
