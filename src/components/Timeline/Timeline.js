@@ -51,7 +51,8 @@ class Timeline extends Component {
 
     render() {
         const { isClosed, targets } = this.state;
-        const { color } = this.props;
+        // const { color } = this.props;
+        const color = 'white';
 
         const toggleBtn = !isClosed ? 
             (<div className='timeline__toggleBtn' style={{borderColor: color}} onClick={this.toggleTimeline}>
