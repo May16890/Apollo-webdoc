@@ -13,10 +13,16 @@ const AstronautesCard = (data) => {
     return (
         <div className="astronautesPage__cardsContainer__wrapper">
             <img className="astronautePictures" alt="astronautePicture" src={src}></img>
-            <h3>{name}</h3>
-            <h3>{date}</h3>
-            <p>{mission}</p>
-            <Link to={{ pathname: `/singlePage/${target[0]}`, state: { currentCard: target[1]}}}>CLICK</Link>
+            <div className="astonauteText">
+                <div>
+                    <h3>{name}</h3>
+                    <p>{mission}</p>
+                </div>
+                <div>
+                    <h3>{date}</h3>
+                    <Link className='linkAstronaute' to={{ pathname: `/singlePage/${target[0]}`, state: { currentCard: target[1]}}}>click</Link>
+                </div>
+            </div>
         </div>
     )
 }

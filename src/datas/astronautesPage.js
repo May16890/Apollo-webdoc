@@ -36,34 +36,34 @@ const AstronautesMockup = [
         mission: "Apollo 11" ,
         target: ['premice', 5]
     },
-    // {
-    //     name: "Harrison Schmitt",
-    //     src: astronautePicture,
-    //     date: "April 1966",
-    //     mission: "Apollo 11" ,
-    //     target: ['premice', 5]
-    // },
-    // {
-    //     name: "Harrison Schmitt",
-    //     src: astronautePicture,
-    //     date: "April 1966",
-    //     mission: "Apollo 11" ,
-    //     target: ['premice', 5]
-    // },
-    // {
-    //     name: "Harrison Schmitt",
-    //     src: astronautePicture,
-    //     date: "April 1966",
-    //     mission: "Apollo 11" ,
-    //     target: ['premice', 5]
-    // },
-    // {
-    //     name: "Harrison Schmitt",
-    //     src: astronautePicture,
-    //     date: "April 1966",
-    //     mission: "Apollo 11" ,
-    //     target: ['premice', 5]
-    // },
+    {
+        name: "Harrison Schmitt",
+        src: astronautePicture,
+        date: "April 1966",
+        mission: "Apollo 11" ,
+        target: ['premice', 5]
+    },
+    {
+        name: "Harrison Schmitt",
+        src: astronautePicture,
+        date: "April 1966",
+        mission: "Apollo 11" ,
+        target: ['premice', 5]
+    },
+    {
+        name: "Harrison Schmitt",
+        src: astronautePicture,
+        date: "April 1966",
+        mission: "Apollo 11" ,
+        target: ['premice', 5]
+    },
+    {
+        name: "Harrison Schmitt",
+        src: astronautePicture,
+        date: "April 1966",
+        mission: "Apollo 11" ,
+        target: ['premice', 5]
+    },
     // {
     //     name: "Harrison Schmitt",
     //     src: astronautePicture,

@@ -1,15 +1,52 @@
 .astronautesPage {
     &__cardsContainer {
         &__wrapper {
-            height: 39vh;
-            width: 17vw;
-            background-color: lightgrey;
-            display: inline-block;
+            padding: 16px 0px;
+            min-height: 280px;
+            width: 280px;
+            background: rgb(201, 201, 201);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
             margin-right: 16px;
+            color: black;
+            // -moz-box-shadow: 0px 0px 10px 1px #cfcfcf;
+            // -webkit-box-shadow: 0px 0px 10px 1px #cfcfcf;
+            // -o-box-shadow: 0px 0px 10px 1px #cfcfcf;
+            // box-shadow: 0px 0px 10px 1px #cfcfcf;
+            // filter: #cfcfcf Direction=NaN, 10px;
         }
     }
 }
 .astronautePictures {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 90%;
+    max-height: 75%;
+}
+.astonauteText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    min-height: 50px;
+    margin-top: 10px;
+}
+.astonauteText div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.linkAstronaute {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    padding: 2px;
+    transition: .2s ease-in-out;
+}
+.linkAstronaute:hover {
+    background: rgba(0, 0, 0, .1);
 }
