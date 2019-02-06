@@ -18,6 +18,9 @@ class SinglePage extends Component {
   }
 
   handleScroll = event => {
+    if (this.state.fullscreen) {
+      return null;
+    }
     if (scrollDir) {
       if (event.deltaY < 0 ) {
         this.setState({
