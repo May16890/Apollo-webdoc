@@ -1,5 +1,5 @@
 # Apollo-webdoc
-Web documentaire sur le programme Apollo
+Web-documentary about the project Apollo.
 
 # Launch it:
 Paste this in your terminal:
