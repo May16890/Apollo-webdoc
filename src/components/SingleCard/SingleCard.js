@@ -29,7 +29,7 @@ const SingleCard = ({nextCard, index, erasDatas, fullscreen, opacity, onClick, t
     //     }
     //     return null;
     // });
-    const { logo, titleCard, intro, astro1, astro2, astro3, content, audio, navetteName, navette, teamImg, teamImg1, moon, intro1, geminiPic, AtlasContent, journal} = singleCard;
+    const { logo, titleCard, intro, astro1, astro2, astro3, content, audio, navetteName, navette, teamImg, teamImg1, moon, intro1, geminiPic, AtlasContent, journal, rover, MSLPic1, MSLPic2} = singleCard;
     return (
         <Fragment>
             <span className='singlePage__closeFS' style={fullscreen ? {opacity: 1} : {opacity: 0}} onClick={closeFS}>FERMER</span>
@@ -101,6 +101,12 @@ const SingleCard = ({nextCard, index, erasDatas, fullscreen, opacity, onClick, t
                                 </div>
 
                             }
+                            {
+                            rover &&
+                            <div className="singlePage__roverWrapper">
+                                <img className='singlePage__rover' src={rover} alt='rover'/>
+                            </div>
+                        }
 
                            
                         </div>
@@ -121,8 +127,15 @@ const SingleCard = ({nextCard, index, erasDatas, fullscreen, opacity, onClick, t
                                 <img style={{width: '80%;'}} className='singlePage__journal' src={journal} alt='journal'/>
 
                         }
+                        {
+                            MSLPic1 && 
+                            <img style={{width: '80%;'}} className='singlePage__MSL' src={MSLPic1} alt='journal'/>
+                        }
+                       {
+                            MSLPic2 && 
+                            <img style={{width: '80%;', marginLeft: '10%;'}} className='singlePage__MSL' src={MSLPic2} alt='journal'/>
+                        }
                        
-                          
                         </div>
                         {/* <div className='singlePage__moonWrapper'> */}
                             {erasDatas[index + 1] && <span onClick={nextCard} className='singlePage__nextPage'>SUIVANT</span>}

@@ -17,6 +17,12 @@ import GeminiPatch from '../assets/img/geminiPatch.png';
 import MercuryPatch from '../assets/img/mercuryPatch.png';
 import GeminiSchema from '../assets/img/Gemini1.png';
 import geminiPic from '../assets/img/paraglider.jpg';
+import MSL from '../assets/img/MSLaboratory.png';
+import rover from '../assets/img/roverCuriosity.jpg';
+import Juno from '../assets/img/Juno_mission.svg';
+import MSLPic1 from '../assets/img/MSL_cruise.png';
+import MSLPic2 from '../assets/img/MSL_pic.jpg';
+import Osiris from '../assets/img/Osiris.png';
 
 const erasDatas = {
     premice: [
@@ -57,8 +63,7 @@ const erasDatas = {
         'logo': GeminiPatch,
         'titleCard': `Programme <span style='color:red;'>Gemini</span>`,
         'intro': `Alors que la fin du programme spatial américain Mercury se profile, les dirigeants de la NASA lancent un programme destiné à maîtriser les techniques de localisation, 
-        manœuvre et rendez-vous spatial, mettre au point les techniques permettant de travailler dans l'espace au cours de sorties extra-véhiculaires, perfectionner les méthodes de retour sur Terre des vaisseaux spatiaux et leur atterrissage et étudier les conséquences de l'apesanteur sur la physiologie humaine au cours de vols de longue durée.
-        `,
+        manœuvre et rendez-vous spatial, mettre au point les techniques permettant de travailler dans l'espace au cours de sorties extra-véhiculaires, perfectionner les méthodes de retour sur Terre des vaisseaux spatiaux et leur atterrissage et étudier les conséquences de l'apesanteur sur la physiologie humaine au cours de vols de longue durée.`,
        'geminiPic' : geminiPic,
         'content': `Le vaisseau spatial <span style='font-weight: 800'>Gemini</span>, qui devait initialement être une simple version améliorée de la capsule Mercury, se transforme au fur et à mesure de son développement en un vaisseau complètement différent, capable de voler avec deux astronautes durant deux semaines. Le vaisseau était lancé par une fusée <span style='font-weight: 800'>Titan II</span>, missile de l'armée de l'air américaine reconverti en lanceur. Le programme rencontra des problèmes de mise au point. 
         Toutefois, fin 1963, tout était rentré dans l'ordre et deux vols sans équipage purent avoir lieu en 1964 et début 1965. 
@@ -146,24 +151,45 @@ const erasDatas = {
         ],
     ],
     today: [
-        [
-            ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
-            ['img', testImg],
-            ['img', testImg],
-            ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
-        ],
-        [
-            ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
-            ['img', testImg],
-            ['img', testImg],
-            ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
-        ],
-        [
-            ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
-            ['img', testImg],
-            ['img', testImg],
-            ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
-        ],
+             {
+            'logo': MSL,
+            'titleCard': `Mars Science Laboratory`,
+            'intro': `Mars Science Laboratory mission d'exploration de la planète <span style='font-weight:800'>Mars</span> à l'aide d'une astromobile, le <span style='font-weight:800'>rover Curiosity</span>. Il peut se déplacer grâce à six roues et à un générateur d’énergie nucléaire au plutonium, ce qui lui donne plus d’autonomie que les panneaux solaires d’autres missions. Curiosity dispose d’un bras télécommandé de 2.1 mètres de long qui lui permet d’analyser le sol et les roches aux alentours, mais aussi de forer et de récolter des échantillons pour les autres instruments.`,
+           'rover' : rover,
+            'content': `Il possède un mât avec une caméra couleur stéréo et haute définition, ainsi qu’un laser capable de vaporiser la surface du sol jusqu’à une distance de sept mètres. Il peut ainsi faire une <span style='font-weight: 800'>analyse spectroscopique</span> à distance et choisir les meilleures cibles. Le rover contient de nombreux autres instruments, caméra microscopique, spectromètre à rayons X, détecteur de neutrons, détecteur de radiation, station météorologique, spectromètre de masse.`,
+            'navetteName': 'GEMINI',
+            'MSLPic1' : MSLPic1,
+            'MSLPic2' : MSLPic2,
+            },
+            {
+            'logo': Juno,
+            'titleCard': `Juno`,
+            'intro': `Juno est une mission spatiale de la NASA qui a pour objectif l'étude de la planète Jupiter. La structure de cette planète géante gazeuse et son mode de formation restent, au lancement de la mission, largement inconnus malgré plusieurs missions spatiales et les observations astronomiques faites depuis la Terre`,
+            'content': `La sonde spatiale, lancée en 2011, doit collecter sur place des données sur les couches internes de Jupiter, la composition de son atmosphère et les caractéristiques de sa magnétosphère. Ces éléments doivent permettre de reconstituer la manière dont Jupiter s'est formée et de corriger ou d'affiner le scénario de formation des planètes du Système solaire dans lequel Jupiter a, du fait de sa masse importante, joué un rôle majeur.
+            <br><br/>
+            <br><br/>
+            Juno a été lancée par une fusée Atlas V le 5 août 2011. Deux ans après son lancement, Juno a effectué un survol à basse altitude de la Terre qui, par assistance gravitationnelle, lui a fourni le surcroît de vitesse nécessaire pour atteindre Jupiter. La phase scientifique de la mission débute après la mise en orbite autour de Jupiter le 5 juillet 2016. Juno commence ses observations, effectuées à partir d'une orbite polaire très elliptique d'une période de 53 jours qui fait passer la sonde à très basse altitude au-dessus de la planète de pôle en pôle, en évitant en grande partie la ceinture de radiations très intense, susceptible de l'endommager. 
+            <br><br/>
+            <br><br/>
+            La phase scientifique de la mission comprend 36 survols de la planète et devait durer vingt mois. Un problème rencontré sur la propulsion principale en octobre 2016 n'a pas permis de faire passer la sonde spatiale sur l'orbite courte de 14 jours visée. Pour réaliser le nombre de survols souhaité, la mission doit être prolongée jusqu'en 2021 et devra survivre jusque-là à l'exposition prolongée au rayonnement.
+            `,
+            'navetteName': 'GEMINI',
+            
+            },
+            {
+                'logo': Osiris,
+                'titleCard': `OSIRIS-REx`,
+                'intro': `Arrivée à proximité de  <span style='font-weight: 800'>l’astéroïde Bennu</span> le 3 décembre, la sonde <span style='font-weight: 800'>Osiris-Rex</span> y stationne autour, à seulement une vingtaine de kilomètres de distance. Depuis cette date, elle renvoie des images et des données extraordinaires d'un nouveau monde.`,
+                'content': `Il y a deux jours, l'équipe scientifique de la mission a annoncé les premiers résultats et certains sont « très excitants et enthousiasmants comme la présence de minéraux hydratés, c'est à dire des minéraux qui ont interagi avec l'eau », explique Patrick Michel, astrophysicien, directeur de recherches au CNRS et membre de l'équipe scientifique de la mission.
+                <br><br/>
+                Les observations de Bennu ont débuté dès la phase d'approche et ont continué avec des survols à basses altitudes, à seulement 7 kilomètres de sa surface. Elles ont confirmé ce à quoi les scientifiques s'attendaient en termes « de forme, de masse et de densité ». L'astéroïde ressemble étonnamment au modèle de forme, dérivé des données acquises par le radar d'Arecibo réalisé en 2013. Quant à sa densité (1,19 grammes par centimètres cube), elle est aussi très proche de celle estimée depuis le sol terrestre avec une technique alors inédite qui a consisté à « mesurer l'effet thermique, appelé <span style='font-weight: 800'>Yarkovsky</span>, qui perturbe la trajectoire de l'astéroïde autour du Soleil ». À l'avenir, cette technique validée pourra ainsi être utilisée pour caractériser les astéroïdes les plus proches de la Terre avec des résultats proches de la réalité.
+                <br><br/>
+                <br><br/>
+                Les données spectrales indiquent que Bennu est lié aux <span style='font-weight: 800'>chondrites carbonées</span> de type CM et CI, ce qui en fait un « objet très primitif » dont le corps parent se serait « formé très tôt dans l'histoire de la formation du Système Solaire dans une région riche en eau ». La composition de cet objet d'environ 500 mètres de diamètre est donc « fidèle à celle du matériau présent dans les premières phases de formation du Système solaire il y a 4,6 milliards d'années » ; ce qui va permettre aux scientifiques d'approfondir leurs connaissances sur cette époque.
+                `,
+                'navetteName': 'GEMINI',
+                
+                },
     ]
 };
 
