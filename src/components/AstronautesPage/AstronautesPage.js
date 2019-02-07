@@ -29,7 +29,7 @@ class AstronautesPage extends Component {
 
     const astronautes = AstronautesMockup[currGlobalIndex].map((astronaute, index) => (
       <View key={`astronaute__${index}`}>
-        <AstronautesCard index={index} name={astronaute.name} src={astronaute.src} mission={astronaute.mission} date={astronaute.date} target={astronaute.target}/>
+        <AstronautesCard index={index} name={astronaute.name} src={astronaute.src} mission={astronaute.mission} date={astronaute.date} target={astronaute.target} timeline={astronaute.timeline}/>
       </View>
     ));
 
