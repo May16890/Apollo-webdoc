@@ -5,37 +5,38 @@ import TimelineDate from '../TimelineDate/TimelineDate.js';
 
 class Timeline extends Component {
     state = {
-        isClosed: this.props.isClosed,
+        // isClosed: this.props.isClosed,
+        isClosed: false,
         targets: [],
     }
 
-    componentDidUpdate(prevProps, prevState) {
-        if (!prevState.isClosed && (prevState.targets === this.state.targets)) {
-            this.setState({
-                isClosed: true,
-            })
-        }
-    }
+    // componentDidUpdate(prevProps, prevState) {
+    //     if (!prevState.isClosed && (prevState.targets === this.state.targets)) {
+    //         this.setState({
+    //             isClosed: true,
+    //         })
+    //     }
+    // }
 
-    closeTimeline = () => {
-        this.setState({
-            isClosed: true,
-        })
-    }
+    // closeTimeline = () => {
+    //     this.setState({
+    //         isClosed: true,
+    //     })
+    // }
 
-    openTimeline = () => {
-        this.setState({
-            isClosed: false,
-        })
-    }
+    // openTimeline = () => {
+    //     this.setState({
+    //         isClosed: false,
+    //     })
+    // }
 
-    toggleTimeline = () => {
-        if (!this.state.isClosed) {
-            this.closeTimeline();
-            return null;
-        }
-        this.openTimeline();
-    }
+    // toggleTimeline = () => {
+    //     if (!this.state.isClosed) {
+    //         this.closeTimeline();
+    //         return null;
+    //     }
+    //     this.openTimeline();
+    // }
 
     setTargets = targets => {
         this.setState({
@@ -51,7 +52,8 @@ class Timeline extends Component {
 
     render() {
         const { isClosed, targets } = this.state;
-        const { color } = this.props;
+        // const { color } = this.props;
+        const color = 'white';
 
         const toggleBtn = !isClosed ? 
             (<div className='timeline__toggleBtn' style={{borderColor: color}} onClick={this.toggleTimeline}>
@@ -83,7 +85,7 @@ class Timeline extends Component {
                         <TimelineDate color={color} date='1975' isRed={(targets[0] === 6 || targets[1]  === 6)}/>
                         <TimelinePeriod color={color} text='Today' link='/singlePage/today' targets={[6, 7]} setTargets={this.setTargets} removeTargets={this.removeTargets}/>
                         <TimelineDate color={color} date='2019'  isRed={(targets[0] === 7 || targets[1]  === 7)}/>
-                        {toggleBtn}
+                        {/* {toggleBtn} */}
                     </div>
                 </div>
             </div>

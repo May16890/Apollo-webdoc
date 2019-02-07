@@ -5,6 +5,8 @@ import Timeline from '../Timeline/Timeline';
 import SingleCard from '../SingleCard/SingleCard';
 import { Link } from 'react-router-dom';
 import erasDatas from '../../datas/singlePage.js';
+import bgStars from '../../assets/img/bgStars.png';
+import bgMoon from '../../assets/img/bgMoon.png';
 
 var scrollDir = true;
 var isScrolling;
@@ -16,6 +18,9 @@ class SinglePage extends Component {
   }
 
   handleScroll = event => {
+    if (this.state.fullscreen) {
+      return null;
+    }
     if (scrollDir) {
       if (event.deltaY < 0 ) {
         this.setState({
@@ -65,21 +70,32 @@ class SinglePage extends Component {
   }
 
   closeFS = () => {
+    const cards = document.querySelectorAll('.singlePage__card');
+    for (let i = 0; i < cards.length; i++) {
+      cards[i].scrollTop = 0;
+    }
+
     this.setState({
       fullscreen: false,
+    })
+  }
+
+  nextCard = () => {
+    this.setState({
+      currentCard: this.state.currentCard + 1,
     })
   }
 
   render() {
     const { currentCard, fullscreen } = this.state;
     const { page } = this.props;
-    const marginLeft = 25 + (currentCard * -62.5);
+    const marginLeft = 20 + (currentCard * -72.5);
 
     console.log(page)
     console.log(erasDatas[this.props.page].length)
 
     const singleCards = erasDatas[page].map((singleCard, index) => (
-      <SingleCard key={`singleCard__${index}`} title={page} onClick={() => this.handleClickCard(index)} fullscreen={currentCard === index ? fullscreen : false} opacity={fullscreen && (currentCard !== index) ? 0 : 1} singleCard={singleCard}/>
+      <SingleCard index={index} erasDatas={erasDatas[page]} key={`singleCard__${index}`} title={page} onClick={() => this.handleClickCard(index)} fullscreen={currentCard === index ? fullscreen : false} opacity={fullscreen && (currentCard !== index) ? 0 : 1} singleCard={singleCard} closeFS={this.closeFS} nextCard={this.nextCard}/>
     ));
 
     const dots = erasDatas[page].map((dot, index) => (
@@ -88,6 +104,9 @@ class SinglePage extends Component {
 
     return (
       <section className='singlePage' onWheel={event => this.handleScroll(event)}>
+        <img className="bgStars" alt="bgStars" src={bgStars}/>
+        <img className="bgMoon" alt="bgMoon" src={bgMoon}/>
+        <div className="bgFilter"></div>
         <Timeline color='grey' isClosed={true}/>
 
         <div className='singlePage__cardsContainer' style={{marginLeft: `${marginLeft}vw`}}>
@@ -96,9 +115,9 @@ class SinglePage extends Component {
 
         <div className='singlePage__dotsContainer'>
           {dots}
-          <span className='singlePage__closeFS' style={fullscreen ? {opacity: 1} : {opacity: 0}} onClick={this.closeFS}>FERMER</span>
+          {/* <span className='singlePage__closeFS' style={fullscreen ? {opacity: 1} : {opacity: 0}} onClick={this.closeFS}>FERMER</span> */}
         </div>
-        <Link className="Navettes__inroLin" to='/intro' style={{position: 'absolute', bottom: 20, right: 20}}>Retour</Link>
+        <Link className="Navettes__inroLin" to='/intro' style={{position: 'absolute', bottom: 20, right: 20, color: 'rgba(255, 255, 255, 0.8)', zIndex:'99'}}>Retour</Link>
       </section>
     );
   }

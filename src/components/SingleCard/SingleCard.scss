@@ -1,4 +1,5 @@
 .singlePage {
+    font-family: 'Avenir', 'Fjalla One', sans-serif;
     &__cardsContainer {
         &__wrapper {
             display: flex;
@@ -18,21 +19,175 @@
         transition: ease-in-out 1s;
     }
     &__card {
-        height: 53vh;
-        width: 50vw;
-        border-radius: 57px;
+        height: 60vh;
+        width: 60vw;
+        border-radius: 10px;
         box-shadow: 0px 3px 13px rgba(0, 0, 0, .16);
-        display: flex;
-        justify-content: center;
-        align-items: center;
         transition: ease-in-out 1s;
+        background: white;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
     }
 }
 
 .fullscreen {
     width: 100vw;
     height: 100vh;
-    transform: translateY(-1vh) translateX(-25vw);
+    transform: translateX(-20vw);
     border: none;
     box-shadow: none;
+    z-index: 100;
+    border-radius: 0px;
+    overflow: scroll;
+    cursor: inherit !important;
+}
+
+.singlePage__head {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom-right-radius: 25px;
+    width: 400px;
+    box-shadow: 1px 1px 50px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+}
+
+.singlePage__head img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 20px;
+}
+
+.singlePage__head div {
+    font-size: 2em;
+    margin-left: 140px;
+}
+
+.singlePage__intro {
+    margin-top: 120px;
+    width: 80%;
+    line-height: 24px;
+    margin-left: 15%;
+}
+
+.singlePage__content {
+    line-height: 24px;
+    width: 35%;
+    margin-left: 15%;
+}
+
+.singlePage__teamImg {
+    width: 400px;
+    height: 500px;
+    border: 2px solid black;
+    padding: 6px;
+}
+
+.singlePage__teamImgWrapper {
+    border: 12px solid black;
+    width: 420px;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 120px;
+    margin-bottom: 50vh;
+}
+
+.singlePage__bottomWrapper {
+    display: flex;
+}
+
+.singlePage__astro {
+    height: 200px;
+    width: 140px;
+    transition: .8s ease-in-out;
+}
+
+.singlePage__mediasWrapper {
+    width: 40%;
+    margin-left: 5%;
+}
+
+.singlePage__astroWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.singlePage__navetteWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    margin-top: 200px;
+}
+
+.singlePage__navetteTitle {
+    color: #CC2F2F;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-left: 20%;
+}
+
+.singlePage__navette {
+    width: 60%;
+    height: 240px;
+    margin-left: 20%;
+}
+
+.singlePage__moonWrapper {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.singlePage__nextPage {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    z-index: 100;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.singlePage__nextPage:hover {
+    color: #CC2F2F;
+}
+
+.singlePage__moon {
+    width: 95%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    bottom: 0;
+}
+
+.singlePage__bgOverlay {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.6));
+    height: 120vh;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+
+.singlePage__bottomWrapper2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
