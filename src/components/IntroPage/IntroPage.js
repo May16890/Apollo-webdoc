@@ -18,10 +18,10 @@ class IntroPage extends Component {
           <div className='intro__introContainer__wrapper'>
             <h1 className='intro__introContainer__title'>BIENVENUE À BORD</h1>
             <h2 className='intro__introContainer__subtitle'>APOLLO VOUS ATTENDS</h2>
-            <p className='intro__introContainer__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br />
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br /> 
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <br />
-              commodo consequat.</p>
+            <p className='intro__introContainer__text'>Web documentaire vous présentant le projet Apollo sous un angle 
+            nouveau. <br/>Vous replongerez dans le contexte géopolitique de l'époque avec la course à l'espace entre les USA 
+            et l'URSS, et découvrirez les enjeux de chaque missions ainsi que leurs aboutissements ayant marqué à tout 
+            jamais notre Histoire.</p>
             <div className='intro__introContainer__linksContainer'>
               <Link className='intro__introContainer__links' to='/astronautes'>ASTRONAUTES</Link>
               <Link className='intro__introContainer__links' to='/navettes'>NAVETTES</Link>
