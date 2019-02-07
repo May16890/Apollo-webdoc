@@ -79,9 +79,9 @@ class Timeline extends Component {
                         <TimelineDate color={color} date='1969' isRed={(targets[0] === 3 || targets[1]  === 3)}/>
                         <TimelinePeriod color={color} text='Apollo 11' link='/singlePage/apollo2' targets={[3, 4]} setTargets={this.setTargets} removeTargets={this.removeTargets}/>
                         <TimelineDate color={color} date='1969' isRed={(targets[0] === 4 || targets[1]  === 4)}/>
-                        <TimelinePeriod color={color} text='Fin du programme' link='/singlePage/apollo3' targets={[4, 5]} setTargets={this.setTargets} removeTargets={this.removeTargets}/>
+                        <TimelinePeriod color={color} text='Période 4' link='/singlePage/apollo3' targets={[4, 5]} setTargets={this.setTargets} removeTargets={this.removeTargets}/>
                         <TimelineDate color={color} date='1972' isRed={(targets[0] === 5 || targets[1]  === 5)}/>
-                        <TimelinePeriod color={color} text='Apollo-Soyouz' link='/singlePage/apolloSoyuz' targets={[5, 6]} setTargets={this.setTargets} removeTargets={this.removeTargets}/>
+                        <TimelinePeriod color={color} text='Fin du programme' link='/singlePage/apolloSoyuz' targets={[5, 6]} setTargets={this.setTargets} removeTargets={this.removeTargets}/>
                         <TimelineDate color={color} date='1975' isRed={(targets[0] === 6 || targets[1]  === 6)}/>
                         <TimelinePeriod color={color} text='Today' link='/singlePage/today' targets={[6, 7]} setTargets={this.setTargets} removeTargets={this.removeTargets}/>
                         <TimelineDate color={color} date='2019'  isRed={(targets[0] === 7 || targets[1]  === 7)}/>

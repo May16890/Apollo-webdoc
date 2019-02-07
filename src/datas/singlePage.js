@@ -26,6 +26,7 @@ import Osiris from '../assets/img/Osiris.png';
 import Apollo7 from '../assets/img/Apollo7_logo.png';
 import Apollo9 from '../assets/img/Apollo-9.png';
 import Apollo11 from '../assets/img/Apollo_11.png';
+import skylab from '../assets/img/Skylab.png';
 
 const erasDatas = {
     premice: [
@@ -117,7 +118,7 @@ const erasDatas = {
             'content': `Armstrong et Aldrin installèrent ensuite un réflecteur laser (sa fonction est d'envoyer des ondes vers la Terre pour mesurer avec une précision de 45 m la distance Terre-Lune), un sismographe ultra-sensible (cet appareil enverra un signal électrique dès le moindre tremblement) et déroulèrent une feuille d'aluminium conçue pour capter les particules solaires. C'est à 14h32 (Heure Française) que la capsule spatiale Apollo XI est partie de Cap Kennedy, au sommet d'une fusée Saturn V de 111 m de haut, pesant 3100 tonnes et d'une puissance de 155 millions de chevaux.
             <br><br/>
             <br><br/>
-            "Apollo XI" doit, pour la première fois dans l'histoire de l'Humanité, amener des hommes sur la lune. Le 19 Juillet, "Apollo XI" s'est satellisée avec son équipage composé de Neil Armstrong, Edwin Aldrin et Michael Collins autour de la Lune. Après une vérification approfondie de toutes les installations techniques, la séparation du module d'exploration lunaire (LEM) "Eagle" s'effectue le 20 Juillet, emportant Armstrong et Aldrin vers leur objectif, Collins restant seul aux commandes d' Apollo XI en orbite autour de la Lune. Après une manoeuvre plus que délicate, le LEM touche la surface lunaire à 21 h 17. Après un séjour de quelques heures dans le LEM, la sortie se prépare. Le premier homme à poser le pied sur la lune, Neil Armstrong, accomplit le geste historique le 21 Juillet à 3 h 56 et prononce sa phrase devenue célèbre depuis : "C'est un petit pas pour l'homme, un bond de géant pour l'Humanité".            <br><br/>
+            Apollo XI doit, pour la première fois dans l'histoire de l'Humanité, amener des hommes sur la lune. Le 19 Juillet, Apollo XI s'est satellisée avec son équipage composé de Neil Armstrong, Edwin Aldrin et Michael Collins autour de la Lune. Après une vérification approfondie de toutes les installations techniques, la séparation du module d'exploration lunaire (LEM) "Eagle" s'effectue le 20 Juillet, emportant Armstrong et Aldrin vers leur objectif, Collins restant seul aux commandes d' Apollo XI en orbite autour de la Lune. Après une manoeuvre plus que délicate, le LEM touche la surface lunaire à 21 h 17. Après un séjour de quelques heures dans le LEM, la sortie se prépare. Le premier homme à poser le pied sur la lune, Neil Armstrong, accomplit le geste historique le 21 Juillet à 3 h 56 et prononce sa phrase devenue célèbre depuis : "C'est un petit pas pour l'homme, un bond de géant pour l'Humanité".  <br><br/>
             La fusée spatiale Saturn V utilisée pour mettre en orbite Apollo 8 fut désignée SA-503. Il s'agissait du troisième exemplaire construit. 
             Les astronautes firent au total 10 révolutions autour du satellite terrestre. Durant leur expédition, ils purent prendre différents clichés dont le premier d'un lever de Terre. Apollo 8 permit à l'Homme de voir directement la «face cachée» de la Lune. L'une des tâches dédiées à l'équipage consistait à effectuer une reconnaissance en vue d'un atterrissage, surtout de la mer de la Tranquillité où devait se poser Apollo 11.`,
             'navetteName': 'GEMINI',
@@ -133,7 +134,7 @@ const erasDatas = {
             Le 24 Juillet à 17 h 51, la capsule touche le Pacifique dans la zone prévue : la première expédition humaine sur la Lune s'achève. En souvenir du premier alunissage, les astronautes américains ont laissé sur le sol lunaire un drapeau US en Nylon, ainsi qu'une plaque d’acier inaltérable sur laquelle de futurs "touristes lunaires" pourront lire&nbsp;: "C'est ici que des êtres humains de la planète Terre posèrent pour la première fois le pied sur la Lune, en 1969 après J-C. Nous sommes venus en paix pour toute l'Humanité. Neil A. Armstrong, astronaute, Edwin E. Aldrin, astronaute, Michael Collins, astronaute, Richard Nixon, Président des Etats-Unis d'Amérique".`,
             'navetteName': 'GEMINI',
             
-        }
+        },
     ],
     apollo3: [
         [
@@ -162,18 +163,23 @@ const erasDatas = {
         ],
     ],
     apolloSoyuz: [
-        [
-            ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
-            ['img', testImg],
-            ['img', testImg],
-            ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
-        ],
-        [
-            ['text', 'jkdsjdkjsd djksqjdksqjdks jdskjdksjqdkqsjd jdksqjdksqjdsq jkdsjqkdjqsk.'],
-            ['img', testImg],
-            ['img', testImg],
-            ['text', 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.'],
-        ],
+       
+        {
+            'logo': skylab,
+            'titleCard': `Skylab / Apollo-Soyouz`,
+            'intro': `Skylab est une station spatiale longue de 36 mètres. Elle fut mise en orbite le 14 mai 1973 par une Saturn V. Son volume habitable de 347 m³ sur 407 m² contient : une salle de travail de 17 m², une salle de séjour de 10 m², un dortoir avec alvéoles individuelles de 7 m² et un débarras de 3 m².`,
+            'content': `L’alimentation de Skylab est obtenue par 4 cellules solaires d'une envergure de 111 m² au total.
+            Les astronautes rejoignent Skylab avec une capsule "Apollo" lancée par une Saturn I-B.
+            
+            <br><br/>
+            <br><br/>
+
+            C’est le 15 Juillet 1975 que la mission Soyouz 19 a décollé de Baïkonour. A bord de l'engin spatial se trouvent les cosmonautes soviétiques Alexeï Leonov et Valéri Kubassov. Sept heures plus tard, un équipage américain quittait la Terre à Cap Canaveral à bord d'une capsule "Apollo" : Thomas Stafford, Donald Slayton et Vance Brand. <br><br/>
+            Le départ des deux équipages va les amener dans l'espace où doit avoir lieu la première entreprise spatiale commune entre l'URSS et les USA. Les deux capsules spatiales se sont amarrées l'une à l'autre le 17 Juillet grâce à un module d'arrimage spécial, au dessus de l'Europe de l'ouest. Un compartiment de sas a permis aux astronautes et cosmonautes se rendent mutuellement visite. Les deux capsules sont restées arrimées pendant 48 h. Le vol "Soyouz" a retrouvé le sol soviétique le 21 Juillet, "Apollo" a amerri le 24 Juillet. <br><br/>
+            La mission Apollo-Soyouz restera gravée comme un événement historique précurseur dans le genre avec une mise en commun des technologies. L’image de rapprochement des deux vaisseaux a fait le tour du monde grâce à la télévision et à la presse écrite. La plus grande réussite de cette mission ne fut pas technique, mais bien politique, puisqu'il permit aux opinions publiques des deux camps de se rendre compte que Soviétiques et Américains pouvaient trouver des sujets d’entente. Ce type d’expérience de mise en commun de technologies se répétera en 1996 avec la visite de la navette spatiale américaine à la station spatiale Mir puis la création commune de la Station spatiale internationale.`,
+            'navetteName': 'GEMINI',
+            
+        },
     ],
     today: [
              {
@@ -189,7 +195,7 @@ const erasDatas = {
             {
             'logo': Juno,
             'titleCard': `Juno`,
-            'intro': `Juno est une mission spatiale de la NASA qui a pour objectif l'étude de la planète Jupiter. La structure de cette planète géante gazeuse et son mode de formation restent, au lancement de la mission, largement inconnus malgré plusieurs missions spatiales et les observations astronomiques faites depuis la Terre`,
+            'intro': `Juno est une mission spatiale de la NASA qui a pour objectif l'étude de la planète Jupiter. La structure de cette planète géante gazeuse et son mode de formation restent, au lancement de la mission, largement inconnus malgré plusieurs missions spatiales et les observations astronomiques faites depuis la Terre.`,
             'content': `La sonde spatiale, lancée en 2011, doit collecter sur place des données sur les couches internes de Jupiter, la composition de son atmosphère et les caractéristiques de sa magnétosphère. Ces éléments doivent permettre de reconstituer la manière dont Jupiter s'est formée et de corriger ou d'affiner le scénario de formation des planètes du Système solaire dans lequel Jupiter a, du fait de sa masse importante, joué un rôle majeur.
             <br><br/>
             <br><br/>
