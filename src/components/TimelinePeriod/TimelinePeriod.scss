@@ -8,7 +8,6 @@
         background: rgba(255, 255, 255, 1);
         transition: ease-in-out .2s;
         border-radius: 8px;
-        position: relative;
         &__text {
             display: none;
             font-size: 1.2em;
@@ -25,36 +24,4 @@
 .appear {
     transform: translateY(-30px);
     display: block;
-}
-
-.timelineIndicator {
-    position: absolute;
-    top: 27px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Avenir', 'Fjalla One', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    animation: opacityChange 1.4s infinite;
-}
-
-.timelineIndicator p {
-    font-size: 1.1em;
-    margin-top: 8px;
-    color: white;
-    opacity: 1;
-}
-
-@keyframes opacityChange {
-    0% {
-        opacity: 0.9;
-    }
-    50% {
-        opacity: 0.4;
-    }
-    100% {
-        opacity: 0.9;
-    }
 }

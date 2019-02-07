@@ -5,29 +5,13 @@ import NavetteModal from '../NavetteModal/NavetteModal';
 import { Link } from 'react-router-dom';
 import NavettesMockup from '../../datas/navettesPage.js';
 import bgIntro from '../../assets/img/Galaxy.png';
-import axios from 'axios';
 
 class NavettesPage extends Component {
   state = {
     isOpen: false,
     currIndex: 0,
     currGlobalIndex: 0,
-    navetteTotal: NavettesMockup.reduce((acc, valC) => acc + valC.length, 0),
-    datas: [],
-  }
-
-  componentDidMount = async () => {
-    await axios.get('http://localhost:8000/src/api/datas/read.php')
-    .then((response) => {
-      const resultat = response.data.records;
-
-      this.setState({
-        datas: resultat
-      })
-    })
-    .catch(function (error) {
-      console.log(error)
-    })
+    navetteTotal: NavettesMockup.reduce((acc, valC) => acc + valC.length, 0)
   }
 
   openModal = ({index}) => {
@@ -75,8 +59,6 @@ class NavettesPage extends Component {
   render() {
     const { isOpen, currIndex, currGlobalIndex, navetteTotal } = this.state;
     const styled = isOpen ? {display: 'none'} : {};
-
-    console.log(this.state.datas || 'NOPE');
 
     const navettes = NavettesMockup[currGlobalIndex].map((navette, index) => (
       <Navette styled={styled} key={`navette__${index}`} index={index} name={navette.name} src={navette.src} desc={navette.desc} target={navette.target} handleClick={this.openModal}/>
@@ -130,9 +112,6 @@ class NavettesPage extends Component {
           return null;
         }
       } else {
-        if (currIndex === 8 && navetteTotal % 9 === 0 && (currGlobalIndex === NavettesMockup.length - 1)) {
-          return null;
-        }
         if ((currIndex === ((navetteTotal % 9) - 1)) && (currGlobalIndex === NavettesMockup.length - 1)) {
           return null;
         } else {

@@ -4,7 +4,7 @@ import './AstronautesCard.scss';
 
 
 const AstronautesCard = (data) => {
-    const { src, name, mission, date, target, timeline } = data;
+    const { src, name, mission, date, target } = data;
     return (
         <div className="astronautesPage__cardsContainer__wrapper">
             <img className="astronautePictures" alt="astronautePicture" src={src}></img>
@@ -15,7 +15,7 @@ const AstronautesCard = (data) => {
                 </div>
                 <div>
                     <h3>{date}</h3>
-                    <Link className='linkAstronaute' to={{ pathname: `/singlePage/${target[0]}`, state: { currentCard: target[1], fullscreen: true,} }}>{timeline ? timeline : 'retour'}</Link>
+                    <Link className='linkAstronaute' to={{ pathname: `/singlePage/${target[0]}`, state: { currentCard: target[1]}}}>retour</Link>
                 </div>
             </div>
         </div>

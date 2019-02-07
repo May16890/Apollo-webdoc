@@ -16,7 +16,7 @@ const NavetteModal = ({data, handleClick, closeModal}) => {
             </div>
             <h3 className="navetteModal__name">{name}</h3>
             <p className="navetteModal__desc">{desc}</p>
-            <Link to={{ pathname: `/singlePage/${target[0]}`, state: { currentCard: target[1], fullscreen: true,} }} className="navetteModal__btn">Période correspondante</Link>
+            <Link to={{ pathname: `/singlePage/${target[0]}`, state: { currentCard: target[1]} }} className="navetteModal__btn">Période correspondante</Link>
         </div>
     )
 }

@@ -104,8 +104,8 @@ const NavettesMockup = [
         vol STS-80 avec 17 jours et 15 heures. Elle fut la première navette commandée par une femme, 
         Eileen Collins, lors du vol STS-93 en 1999.`,
         target: ['premice', 3],
-    },
-    {
+    }],
+    [{
         name: "Saturn I-B",
         src: SaturnIB,
         desc: `La fusée spatiale Saturn I-B était une version améliorée du lanceur Saturn I, 
@@ -115,19 +115,8 @@ const NavettesMockup = [
         fusée Saturn V nécessaire au lancement complet, était encore en cours d'élaboration. 
         Saturn IB fut utilisé plus tard, pour les missions habitées Skylab et le projet Apollo-Soyouz.`,
         target: ['premice', 3],
-    }],
-    // [{
-    //     name: "Saturn I-B",
-    //     src: SaturnIB,
-    //     desc: `La fusée spatiale Saturn I-B était une version améliorée du lanceur Saturn I, 
-    //     qui disposait d'un second étage plus puissant, le S-IVB. Contrairement à Saturn I, 
-    //     le modèle IB était capable de placer le module de commande d'Apollo en orbite terrestre, 
-    //     ce qui en faisait un lanceur de choix pour tester le vaisseau Apollo pendant que la 
-    //     fusée Saturn V nécessaire au lancement complet, était encore en cours d'élaboration. 
-    //     Saturn IB fut utilisé plus tard, pour les missions habitées Skylab et le projet Apollo-Soyouz.`,
-    //     target: ['premice', 3],
-    // }
-    // ]
+    }
+    ]
 ]
 
 export default NavettesMockup;
