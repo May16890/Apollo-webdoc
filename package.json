@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
     "gsap": "^2.0.2",
     "install": "^0.12.2",
     "jquery": "^3.3.1",

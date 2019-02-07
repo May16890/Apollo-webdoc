@@ -49,13 +49,19 @@
 
 .linkAstronaute {
     text-decoration: none;
-    color: rgba(0, 0, 0, 1);
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1em;
-    padding: 2px;
+    font-size: 0.9em;
+    padding: 4px 10px;
+    width: 70%;
+    -webkit-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
+    text-align: center;
+    transform: translateX(8px) translateY(7px);
+    border: 1px solid;
+    border-radius: 3px;
 }
 .linkAstronaute:hover {
     background: rgba(0, 0, 0, .1);
