@@ -15,7 +15,7 @@ const AstronautesCard = (data) => {
                 </div>
                 <div>
                     <h3>{date}</h3>
-                    <Link className='linkAstronaute' to={{ pathname: `/singlePage/${target[0]}`, state: { currentCard: target[1]}}}>retour</Link>
+                    <Link className='linkAstronaute' to={{ pathname: `/singlePage/${target[0]}`, state: { currentCard: target[1], fullscreen: true,} }}>retour</Link>
                 </div>
             </div>
         </div>
