@@ -52,7 +52,7 @@
     align-items: center;
     padding: 20px;
     border-bottom-right-radius: 25px;
-    width: 400px;
+    width: 550px;
     box-shadow: 1px 1px 50px 0px rgba(0, 0, 0, 0.2);
     z-index: 10000;
 }
@@ -83,22 +83,22 @@
 }
 
 .singlePage__teamImg {
-    width: 400px;
-    height: 500px;
+    width: 100%;
+    height: auto;
     border: 2px solid black;
     padding: 6px;
 }
 
 .singlePage__teamImgWrapper {
-    border: 12px solid black;
-    width: 420px;
-    height: 520px;
+    // border: 12px solid black;
+    // width: 420px;
+    // height: 520px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 50%;
-    transform: translateX(-50%);
-    margin-top: 120px;
+     transform: translateX(-50%);
+    //margin-top: 120px;
     margin-bottom: 50vh;
 }
 
@@ -128,7 +128,7 @@
     flex-direction: column;
     justify-content: center;
     // align-items: center;
-    margin-top: 200px;
+    margin-top: -11px;
 }
 
 .singlePage__navetteTitle {
@@ -190,4 +190,36 @@
     position: relative;
     display: flex;
     flex-direction: column;
+}
+.singlePage__intro1 {
+    width: 535px;  
+}
+.singlePage__atlas {
+margin-left: 15%;
+}
+.singlePage__journalWrapper {
+    margin-left: 15%;
+}
+.singlePage__journal {
+    width: 50%;
+    height: auto;
+    margin-top: 20%;
+}
+.singlePage__teamImg1{
+    margin-top: 20%;
+}
+.singlePage__geminiPic{
+    margin-left: 20%;
+    width: 60%;
+    margin-top: 10%;
+}
+.singlePage__rover {
+    width: 40%;
+    margin-left: 20%;
+}
+.singlePage__MSL {
+    width: 60%;
+    height: auto;
+    margin-top: 20%;
+    margin-left: 10%;
 }
