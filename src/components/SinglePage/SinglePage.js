@@ -70,7 +70,11 @@ class SinglePage extends Component {
   }
 
   closeFS = () => {
-    document.querySelector('.singlePage__card').scrollTop = 0;
+    const cards = document.querySelectorAll('.singlePage__card');
+    for (let i = 0; i < cards.length; i++) {
+      cards[i].scrollTop = 0;
+    }
+
     this.setState({
       fullscreen: false,
     })
@@ -85,7 +89,7 @@ class SinglePage extends Component {
     console.log(erasDatas[this.props.page].length)
 
     const singleCards = erasDatas[page].map((singleCard, index) => (
-      <SingleCard key={`singleCard__${index}`} title={page} onClick={() => this.handleClickCard(index)} fullscreen={currentCard === index ? fullscreen : false} opacity={fullscreen && (currentCard !== index) ? 0 : 1} singleCard={singleCard} closeFS={this.closeFS}/>
+      <SingleCard index={index} erasDatas={erasDatas[page]} key={`singleCard__${index}`} title={page} onClick={() => this.handleClickCard(index)} fullscreen={currentCard === index ? fullscreen : false} opacity={fullscreen && (currentCard !== index) ? 0 : 1} singleCard={singleCard} closeFS={this.closeFS}/>
     ));
 
     const dots = erasDatas[page].map((dot, index) => (
@@ -107,7 +111,7 @@ class SinglePage extends Component {
           {dots}
           {/* <span className='singlePage__closeFS' style={fullscreen ? {opacity: 1} : {opacity: 0}} onClick={this.closeFS}>FERMER</span> */}
         </div>
-        <Link className="Navettes__inroLin" to='/intro' style={{position: 'absolute', bottom: 20, right: 20, color: 'rgba(255, 255, 255, 0.8)', zIndex:'200'}}>Retour</Link>
+        <Link className="Navettes__inroLin" to='/intro' style={{position: 'absolute', bottom: 20, right: 20, color: 'rgba(255, 255, 255, 0.8)', zIndex:'99'}}>Retour</Link>
       </section>
     );
   }

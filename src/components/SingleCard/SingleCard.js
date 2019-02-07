@@ -4,8 +4,9 @@ import SingleCardText from '../SingleCardText/SingleCardText.js';
 import SingleCardImg from '../SingleCardImg/SingleCardImg.js';
 import SingleCardVid from '../SingleCardVid/SingleCardVid.js';
 import SingleCardAudio from '../SingleCardAudio/SingleCardAudio.js';
+import moonSingleCard from '../../assets/img/moonSingleCard.png';
 
-const SingleCard = ({fullscreen, opacity, onClick, title, singleCard, closeFS}) => {
+const SingleCard = ({index, erasDatas, fullscreen, opacity, onClick, title, singleCard, closeFS}) => {
     const  style = {
         wrapper: fullscreen ? {height: '100vh', opacity: opacity} : {opacity: opacity},
         title: fullscreen ? 0 : 1,
@@ -29,7 +30,6 @@ const SingleCard = ({fullscreen, opacity, onClick, title, singleCard, closeFS}) 
     //     return null;
     // });
     const { logo, titleCard, intro, astro1, astro2, astro3, content, audio, navetteName, navette, teamImg } = singleCard;
-
     return (
         <Fragment>
             <span className='singlePage__closeFS' style={fullscreen ? {opacity: 1} : {opacity: 0}} onClick={closeFS}>FERMER</span>
@@ -39,7 +39,7 @@ const SingleCard = ({fullscreen, opacity, onClick, title, singleCard, closeFS}) 
                     <div dangerouslySetInnerHTML={{__html: titleCard}}/>
                 </div>
                 :
-                <div className='singlePage__head' style={{opacity: 0, transition: '0s ease-in-out'}}>
+                <div className='singlePage__head' style={{opacity: 0, transition: '0s ease-in-out', zIndex: 0}}>
                     <img src={logo} alt={'logo'}/>
                     <div dangerouslySetInnerHTML={{__html: titleCard}}/>
                 </div>
@@ -65,11 +65,27 @@ const SingleCard = ({fullscreen, opacity, onClick, title, singleCard, closeFS}) 
                         {/* <p className='singlePage__content'>{content}</p> */}
                         <div className='singlePage__content' dangerouslySetInnerHTML={{__html: content}} />
                         <div className='singlePage__mediasWrapper'>
+                            <div className="singlePage__astroWrapper">
+                                <img className='singlePage__astro' src={astro1} alt='astro1' style={!fullscreen ? {width: 95, height: 140,} : {}}/>
+                                <img className='singlePage__astro' src={astro2} alt='astro2' style={!fullscreen ? {width: 95, height: 140,} : {}}/>
+                                <img className='singlePage__astro' src={astro3} alt='astro3' style={!fullscreen ? {width: 95, height: 140,} : {}}/>
+                            </div>
+                            <div className='singlePage__navetteWrapper'>
+                                <h3 className='singlePage__navetteTitle'>{navetteName}</h3>
+                                <img className='singlePage__navette' src={navette} alt='navette'/>
+                            </div>
                         </div>
                     </div>
-                    {/* <div style={{transition: 'ease-in-out 1s', border: '1px solid rgba(0, 0, 0, .4)', width: `${style.cardContained}%`, height: `${style.cardContained}%`, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly', alignItems: 'center',}}>
-                        {blocksDisplayed}
-                    </div> */}
+                    <div className="singlePage__bottomWrapper2">
+                        <div className='singlePage__teamImgWrapper'>
+                            <img className='singlePage__teamImg' src={teamImg} alt='teamImg'/>
+                        </div>
+                        {/* <div className='singlePage__moonWrapper'> */}
+                            {erasDatas[index + 1] && <span className='singlePage__nextPage'>SUIVANT</span>}
+                            <img className='singlePage__moon' src={moonSingleCard} alt='moon' />
+                        {/* </div> */}
+                        <div className='singlePage__bgOverlay'></div>
+                    </div>
                 </div>
             </div>
         </Fragment>

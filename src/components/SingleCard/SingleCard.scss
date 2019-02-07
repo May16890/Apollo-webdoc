@@ -40,6 +40,7 @@
     z-index: 100;
     border-radius: 0px;
     overflow: scroll;
+    cursor: inherit !important;
 }
 
 .singlePage__head {
@@ -79,4 +80,109 @@
     line-height: 24px;
     width: 35%;
     margin-left: 15%;
+}
+
+.singlePage__teamImg {
+    width: 400px;
+    height: 500px;
+    border: 2px solid black;
+    padding: 6px;
+}
+
+.singlePage__teamImgWrapper {
+    border: 12px solid black;
+    width: 420px;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 120px;
+    margin-bottom: 50vh;
+}
+
+.singlePage__bottomWrapper {
+    display: flex;
+}
+
+.singlePage__astro {
+    height: 200px;
+    width: 140px;
+    transition: .8s ease-in-out;
+}
+
+.singlePage__mediasWrapper {
+    width: 40%;
+    margin-left: 5%;
+}
+
+.singlePage__astroWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.singlePage__navetteWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    margin-top: 200px;
+}
+
+.singlePage__navetteTitle {
+    color: #CC2F2F;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-left: 20%;
+}
+
+.singlePage__navette {
+    width: 60%;
+    height: 240px;
+    margin-left: 20%;
+}
+
+.singlePage__moonWrapper {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.singlePage__nextPage {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    z-index: 100;
+}
+
+.singlePage__moon {
+    width: 95%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    bottom: 0;
+}
+
+.singlePage__bgOverlay {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.6));
+    height: 120vh;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+
+.singlePage__bottomWrapper2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
