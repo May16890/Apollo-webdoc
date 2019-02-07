@@ -18,18 +18,21 @@ class SinglePage extends Component {
   }
 
   handleScroll = event => {
+    if (document.querySelector('.mouse')) {
+      document.querySelector('.mouse').style.display = 'none';
+    }
     if (this.state.fullscreen) {
       return null;
     }
     if (scrollDir) {
       if (event.deltaY < 0 ) {
         this.setState({
-          currentCard: this.state.currentCard === 0 ? this.state.currentCard : this.state.currentCard - 1,
+          currentCard: this.state.currentCard === erasDatas[this.props.page].length - 1 ? this.state.currentCard : this.state.currentCard + 1,
         })
       }
       if (event.deltaY > 0 ) {
         this.setState({
-          currentCard: this.state.currentCard === erasDatas[this.props.page].length - 1 ? this.state.currentCard : this.state.currentCard + 1,
+          currentCard: this.state.currentCard === 0 ? this.state.currentCard : this.state.currentCard - 1,
         })
       }
     }
@@ -104,6 +107,11 @@ class SinglePage extends Component {
 
     return (
       <section className='singlePage' onWheel={event => this.handleScroll(event)}>
+        <div className="mouse">
+          <div className="mouse-icon">
+            <span className="mouse-wheel"></span>
+          </div>
+        </div>
         <img className="bgStars" alt="bgStars" src={bgStars}/>
         <img className="bgMoon" alt="bgMoon" src={bgMoon}/>
         <div className="bgFilter"></div>
