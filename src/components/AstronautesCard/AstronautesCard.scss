@@ -26,7 +26,7 @@
     width: 90%;
 
 }
-.astonauteText {
+.astronauteText {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -36,8 +36,12 @@
     &__container {
         width: 55%;
     }
+    &__mission {
+        font-size: 0.813em;
+        line-height: 15px;
+    }
 }
-.astonauteText div {
+.astronauteText div {
     display: flex;
     justify-content: space-between;
     flex-direction: column;

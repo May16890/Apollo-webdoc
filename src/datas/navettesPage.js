@@ -23,7 +23,7 @@ const NavettesMockup = [
     {
         name: "Mercury-Redstone",
         src: MercuryRedstone,
-        desc: `JLe lanceur composite Mercury-Redstone était une fusée qui permit aux États-Unis
+        desc: `Le lanceur composite Mercury-Redstone était une fusée qui permit aux États-Unis
         d'accomplir ses premières incursions habitées dans l'espace dans le cadre du projet Mercury.
         Le véhicule propulsif tirait sa substance du Jupiter C, une variante issue du missile Redstone
         sur lequel les ingénieurs renforcèrent sa fiabilité pour l'adapter aux missions spatiales.

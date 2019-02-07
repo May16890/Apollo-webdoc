@@ -1,4 +1,3 @@
-import astronautePicture from '../assets/img/astronautePicture.jpg';
 import Shepard from '../assets/img/Alan_Shepard.jpg';
 import Cooper from '../assets/img/gordon_cooper.jpg';
 import Glenn from '../assets/img/john_glenn.jpg';
@@ -185,7 +184,6 @@ const AstronautesMockup = [
         mission: "Apollo-Soyouz",
         target: ['premice', 5]
     },
-    
     ]
 ]
 
