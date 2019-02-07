@@ -94,8 +94,6 @@ class SinglePage extends Component {
     console.log(page)
     console.log(erasDatas[this.props.page].length)
 
-    console.log(this.props.location.state.fullscreen)
-
     const singleCards = erasDatas[page].map((singleCard, index) => (
       <SingleCard index={index} erasDatas={erasDatas[page]} key={`singleCard__${index}`} title={page} onClick={() => this.handleClickCard(index)} fullscreen={currentCard === index ? fullscreen : false} opacity={fullscreen && (currentCard !== index) ? 0 : 1} singleCard={singleCard} closeFS={this.closeFS} nextCard={this.nextCard}/>
     ));
