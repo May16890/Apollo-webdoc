@@ -29,7 +29,7 @@ const SingleCard = ({nextCard, index, erasDatas, fullscreen, opacity, onClick, t
     //     }
     //     return null;
     // });
-    const { logo, titleCard, intro, astro1, astro2, astro3, content, audio, navetteName, navette, teamImg, teamImg1, moon, intro1, geminiPic, AtlasContent, journal, rover, MSLPic1, MSLPic2} = singleCard;
+    const { logo, titleCard, intro, astro1, astro2, astro3, content, audio, navetteName, navette, teamImg } = singleCard;
     return (
         <Fragment>
             <span className='singlePage__closeFS' style={fullscreen ? {opacity: 1} : {opacity: 0}} onClick={closeFS}>FERMER</span>
@@ -65,77 +65,20 @@ const SingleCard = ({nextCard, index, erasDatas, fullscreen, opacity, onClick, t
                         {/* <p className='singlePage__content'>{content}</p> */}
                         <div className='singlePage__content' dangerouslySetInnerHTML={{__html: content}} />
                         <div className='singlePage__mediasWrapper'>
-                            {
-                                astro1 &&
-                                <div className="singlePage__astroWrapper">
-                                    <img className='singlePage__astro' src={astro1} alt='astro1' style={!fullscreen ? {width: 95, height: 140,} : {}}/>
-                                    <img className='singlePage__astro' src={astro2} alt='astro2' style={!fullscreen ? {width: 95, height: 140,} : {}}/>
-                                    <img className='singlePage__astro' src={astro3} alt='astro3' style={!fullscreen ? {width: 95, height: 140,} : {}}/>
-                                </div>
-                            }
-                            {
-                                navette &&
-                                <div className='singlePage__navetteWrapper'>
-                                    <h3 className='singlePage__navetteTitle'>{navetteName}</h3>
-                                    <img className='singlePage__navette' src={navette} alt='navette'/>
-                                </div>
-                            }
-                            {
-                                intro1 && 
-                                <div className="singlePage__intro1Wrapper">
-                                    <img className='singlePage__intro1' src={intro1} alt='intro1'/>
-                                </div>
-                            }
-                         
-                            {
-                                AtlasContent &&
-                                <div className="singlePage__atlasWrapper">
-                                    <h3 className='singlePage__navetteTitle'>{navetteName}</h3>
-                                    <img className='singlePage__atlas' src={AtlasContent} alt='atlas'/>
-                                </div>
-                            }
-                            {
-                                geminiPic && 
-                                <div className="singlePage__geminiWrapper">
-                                    <img className='singlePage__geminiPic' src={geminiPic} alt='geminiPic'/>
-                                </div>
-
-                            }
-                            {
-                            rover &&
-                            <div className="singlePage__roverWrapper">
-                                <img className='singlePage__rover' src={rover} alt='rover'/>
+                            <div className="singlePage__astroWrapper">
+                                <img className='singlePage__astro' src={astro1} alt='astro1' style={!fullscreen ? {width: 95, height: 140,} : {}}/>
+                                <img className='singlePage__astro' src={astro2} alt='astro2' style={!fullscreen ? {width: 95, height: 140,} : {}}/>
+                                <img className='singlePage__astro' src={astro3} alt='astro3' style={!fullscreen ? {width: 95, height: 140,} : {}}/>
                             </div>
-                        }
-
-                           
+                            <div className='singlePage__navetteWrapper'>
+                                <h3 className='singlePage__navetteTitle'>{navetteName}</h3>
+                                <img className='singlePage__navette' src={navette} alt='navette'/>
+                            </div>
                         </div>
                     </div>
                     <div className="singlePage__bottomWrapper2">
                         <div className='singlePage__teamImgWrapper'>
-                        {
-                                moon && <img className='singlePage__teamImg' src={moon} alt='moon'/>
-                        }
-                        {
-                            teamImg1 &&  <img className='singlePage__teamImg1' src={teamImg1} alt='teamImg'/>
-                        }
-                           {
-                            teamImg &&  <img className='singlePage__teamImg' src={teamImg} alt='teamImg'/>
-                        } 
-                        {
-                            journal && 
-                                <img style={{width: '80%;'}} className='singlePage__journal' src={journal} alt='journal'/>
-
-                        }
-                        {
-                            MSLPic1 && 
-                            <img style={{width: '80%;'}} className='singlePage__MSL' src={MSLPic1} alt='journal'/>
-                        }
-                       {
-                            MSLPic2 && 
-                            <img style={{width: '80%;', marginLeft: '10%;'}} className='singlePage__MSL' src={MSLPic2} alt='journal'/>
-                        }
-                       
+                            <img className='singlePage__teamImg' src={teamImg} alt='teamImg'/>
                         </div>
                         {/* <div className='singlePage__moonWrapper'> */}
                             {erasDatas[index + 1] && <span onClick={nextCard} className='singlePage__nextPage'>SUIVANT</span>}
