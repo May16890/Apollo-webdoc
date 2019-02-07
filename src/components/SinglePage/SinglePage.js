@@ -80,6 +80,12 @@ class SinglePage extends Component {
     })
   }
 
+  nextCard = () => {
+    this.setState({
+      currentCard: this.state.currentCard + 1,
+    })
+  }
+
   render() {
     const { currentCard, fullscreen } = this.state;
     const { page } = this.props;
@@ -89,7 +95,7 @@ class SinglePage extends Component {
     console.log(erasDatas[this.props.page].length)
 
     const singleCards = erasDatas[page].map((singleCard, index) => (
-      <SingleCard index={index} erasDatas={erasDatas[page]} key={`singleCard__${index}`} title={page} onClick={() => this.handleClickCard(index)} fullscreen={currentCard === index ? fullscreen : false} opacity={fullscreen && (currentCard !== index) ? 0 : 1} singleCard={singleCard} closeFS={this.closeFS}/>
+      <SingleCard index={index} erasDatas={erasDatas[page]} key={`singleCard__${index}`} title={page} onClick={() => this.handleClickCard(index)} fullscreen={currentCard === index ? fullscreen : false} opacity={fullscreen && (currentCard !== index) ? 0 : 1} singleCard={singleCard} closeFS={this.closeFS} nextCard={this.nextCard}/>
     ));
 
     const dots = erasDatas[page].map((dot, index) => (

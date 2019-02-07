@@ -6,7 +6,7 @@ import SingleCardVid from '../SingleCardVid/SingleCardVid.js';
 import SingleCardAudio from '../SingleCardAudio/SingleCardAudio.js';
 import moonSingleCard from '../../assets/img/moonSingleCard.png';
 
-const SingleCard = ({index, erasDatas, fullscreen, opacity, onClick, title, singleCard, closeFS}) => {
+const SingleCard = ({nextCard, index, erasDatas, fullscreen, opacity, onClick, title, singleCard, closeFS}) => {
     const  style = {
         wrapper: fullscreen ? {height: '100vh', opacity: opacity} : {opacity: opacity},
         title: fullscreen ? 0 : 1,
@@ -81,7 +81,7 @@ const SingleCard = ({index, erasDatas, fullscreen, opacity, onClick, title, sing
                             <img className='singlePage__teamImg' src={teamImg} alt='teamImg'/>
                         </div>
                         {/* <div className='singlePage__moonWrapper'> */}
-                            {erasDatas[index + 1] && <span className='singlePage__nextPage'>SUIVANT</span>}
+                            {erasDatas[index + 1] && <span onClick={nextCard} className='singlePage__nextPage'>SUIVANT</span>}
                             <img className='singlePage__moon' src={moonSingleCard} alt='moon' />
                         {/* </div> */}
                         <div className='singlePage__bgOverlay'></div>
