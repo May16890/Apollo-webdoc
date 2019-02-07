@@ -14,26 +14,22 @@ var isScrolling;
 class SinglePage extends Component {
   state = {
     currentCard: this.props.location.state ? this.props.location.state.currentCard : 0,
-    fullscreen: this.props.location.state ? this.props.location.state.fullscreen : false,
-    currentPage: this.props.page,
+    fullscreen: false,
   }
 
   handleScroll = event => {
-    if (document.querySelector('.mouse')) {
-      document.querySelector('.mouse').style.display = 'none';
-    }
     if (this.state.fullscreen) {
       return null;
     }
     if (scrollDir) {
       if (event.deltaY < 0 ) {
         this.setState({
-          currentCard: this.state.currentCard === erasDatas[this.props.page].length - 1 ? this.state.currentCard : this.state.currentCard + 1,
+          currentCard: this.state.currentCard === 0 ? this.state.currentCard : this.state.currentCard - 1,
         })
       }
       if (event.deltaY > 0 ) {
         this.setState({
-          currentCard: this.state.currentCard === 0 ? this.state.currentCard : this.state.currentCard - 1,
+          currentCard: this.state.currentCard === erasDatas[this.props.page].length - 1 ? this.state.currentCard : this.state.currentCard + 1,
         })
       }
     }
@@ -49,7 +45,6 @@ class SinglePage extends Component {
       this.setState({
         currentCard: 0,
         fullscreen: 0,
-        currentPage: this.props.page,
       })
     }
   }
@@ -96,9 +91,8 @@ class SinglePage extends Component {
     const { page } = this.props;
     const marginLeft = 20 + (currentCard * -72.5);
 
-    // console.log(page)
-    // console.log(erasDatas[this.props.page].length)
-    console.log(erasDatas[page])
+    console.log(page)
+    console.log(erasDatas[this.props.page].length)
 
     const singleCards = erasDatas[page].map((singleCard, index) => (
       <SingleCard index={index} erasDatas={erasDatas[page]} key={`singleCard__${index}`} title={page} onClick={() => this.handleClickCard(index)} fullscreen={currentCard === index ? fullscreen : false} opacity={fullscreen && (currentCard !== index) ? 0 : 1} singleCard={singleCard} closeFS={this.closeFS} nextCard={this.nextCard}/>
@@ -110,15 +104,10 @@ class SinglePage extends Component {
 
     return (
       <section className='singlePage' onWheel={event => this.handleScroll(event)}>
-        <div className="mouse">
-          <div className="mouse-icon">
-            <span className="mouse-wheel"></span>
-          </div>
-        </div>
         <img className="bgStars" alt="bgStars" src={bgStars}/>
         <img className="bgMoon" alt="bgMoon" src={bgMoon}/>
         <div className="bgFilter"></div>
-        <Timeline color='grey' isClosed={true} currentPeriod={this.state.currentPage}/>
+        <Timeline color='grey' isClosed={true}/>
 
         <div className='singlePage__cardsContainer' style={{marginLeft: `${marginLeft}vw`}}>
           {singleCards}

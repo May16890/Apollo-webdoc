@@ -22,7 +22,6 @@ class IntroPage extends Component {
             nouveau. <br/>Vous replongerez dans le contexte géopolitique de l'époque avec la course à l'espace entre les USA 
             et l'URSS, et découvrirez les enjeux de chaque missions ainsi que leurs aboutissements ayant marqué à tout 
             jamais notre Histoire.</p>
-            <Link className='intro__premiceBtn' to='/singlePage/premice'>PREMICE</Link>
             <div className='intro__introContainer__linksContainer'>
               <Link className='intro__introContainer__links' to='/astronautes'>ASTRONAUTES</Link>
               <Link className='intro__introContainer__links' to='/navettes'>NAVETTES</Link>

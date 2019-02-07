@@ -28,48 +28,42 @@ const AstronautesMockup = [
         src: Shepard,
         date: "18 Nov. 1923",
         mission: "Mercury 3, Apollo 14",
-        target: ['premice', 1],
-        timeline: 'Premice',
+        target: ['premice', 1]
     },
     {
         name: "Gordon Cooper",
         src: Cooper,
         date: "6 Mars 1927",
         mission: "Mercury 9, Gemini 5",
-        target: ['premice', 2],
-        timeline: 'Début du programme',
+        target: ['premice', 2]
     },
     {
         name: "John Glenn",
         src: Glenn,
         date: "18 Juil. 1921",
         mission: "Mercury 6",
-        target: ['premice', 3],
-        timeline: 'Apollo 11',
+        target: ['premice', 3]
     },
     {
         name: "Virgil Grissom",
         src: Grissom,
         date: "3 Avril 1926",
         mission: "Mercury 4, Gemini 3, Apollo 1",
-        target: ['premice', 4],
-        timeline: 'Test',
+        target: ['premice', 4]
     },
     {
         name: "John Young",
         src: Young,
         date: "24 Sept. 1930",
         mission: "Gemini 10, Apollo 10 et 16",
-        target: ['premice', 5],
-        timeline: 'Fin du programme',
+        target: ['premice', 5]
     },
     {
         name: "Edward White",
         src: White,
         date: "14 Nov. 1930",
         mission: "Gemini 4, Apollo 1",
-        target: ['premice', 5],
-        timeline: 'Aujourd\'hui',
+        target: ['premice', 5]
     },
     {
         name: "Walter Schirra",
