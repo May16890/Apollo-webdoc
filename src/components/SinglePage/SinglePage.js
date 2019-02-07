@@ -15,6 +15,7 @@ class SinglePage extends Component {
   state = {
     currentCard: this.props.location.state ? this.props.location.state.currentCard : 0,
     fullscreen: this.props.location.state ? this.props.location.state.fullscreen : false,
+    currentPage: this.props.page,
   }
 
   handleScroll = event => {
@@ -48,6 +49,7 @@ class SinglePage extends Component {
       this.setState({
         currentCard: 0,
         fullscreen: 0,
+        currentPage: this.props.page,
       })
     }
   }
@@ -115,7 +117,7 @@ class SinglePage extends Component {
         <img className="bgStars" alt="bgStars" src={bgStars}/>
         <img className="bgMoon" alt="bgMoon" src={bgMoon}/>
         <div className="bgFilter"></div>
-        <Timeline color='grey' isClosed={true}/>
+        <Timeline color='grey' isClosed={true} currentPeriod={this.state.currentPage}/>
 
         <div className='singlePage__cardsContainer' style={{marginLeft: `${marginLeft}vw`}}>
           {singleCards}

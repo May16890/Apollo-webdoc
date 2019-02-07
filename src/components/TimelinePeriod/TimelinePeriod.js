@@ -9,6 +9,24 @@ class TimelinePeriod extends Component {
         isIndicator: true,
     }
 
+    componentDidMount() {
+        if (this.props.isDisplayed) {
+            this.textAppear();
+        } else {
+            this.textDisappear();
+        }
+    }
+
+    componentDidUpdate(prevProps) {
+        if (prevProps.isDisplayed !== this.props.isDisplayed) {
+            if (this.props.isDisplayed) {
+                this.textAppear();
+            } else {
+                this.textDisappear();
+            }
+        }
+      }
+
     textAppear = () => {
         if (document.querySelector('.timelineIndicator')) {
             document.querySelector('.timelineIndicator').style.display = 'none';
@@ -20,20 +38,31 @@ class TimelinePeriod extends Component {
     }
 
     textDisappear = () => {
-        this.setState({
-            isAppear: false,
-        })
+        if (!this.props.isDisplayed) {
+            this.setState({
+                isAppear: false,
+            })
+        }
         this.props.removeTargets();
     }
 
     render() {
-        const { link, text } = this.props;
+        const { link, text, isDisplayed } = this.props;
         const isAppearClass = this.state.isAppear ? 'appear' : '';
 
         const location = this.props.location ? this.props.location.pathname : null;
 
+        const styled = isDisplayed ? {
+            height: 11,
+            transform: 'translateY(-5px)',
+            background: '#CC2F2F',
+            opacity: 1,
+        } : {
+            backgroundColor: this.props.color,
+        }
+
         return (
-            <Link style={{backgroundColor: this.props.color}} onMouseOver={this.textAppear} onMouseLeave={this.textDisappear} className='timeline__period' to={`${link}`}>
+            <Link style={styled} onMouseOver={this.textAppear} onMouseLeave={this.textDisappear} className='timeline__period' to={`${link}`}>
                 <span className={`timeline__period__text ${isAppearClass}`}>{text}</span>
                 {text === 'Premice' && location === '/intro' &&
                     <div className='timelineIndicator'>
