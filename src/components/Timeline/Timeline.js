@@ -80,7 +80,7 @@ class Timeline extends Component {
                 <div className={`timelineContainer ${isClosed ? 'hidden' : ''}`}>
                     <div className='timeline'>
                         <TimelineDate color={color} date='1950' isRed={(targets[0] === 1 || targets[1]  === 1 || currentPeriod === 'premice')}/>
-                        <TimelinePeriod color={color} text='Premice' link='/singlePage/premice' targets={[1, 2]} setTargets={this.setTargets} removeTargets={this.removeTargets} isDisplayed={currentPeriod === 'premice' ? true : false}/>
+                        <TimelinePeriod color={color} text='Prémice' link='/singlePage/premice' targets={[1, 2]} setTargets={this.setTargets} removeTargets={this.removeTargets} isDisplayed={currentPeriod === 'premice' ? true : false}/>
                         <TimelineDate color={color} date='1966' isRed={(targets[0] === 2 || targets[1]  === 2 || currentPeriod === 'premice' || currentPeriod === 'apollo1')}/>
                         <TimelinePeriod color={color} text='Début du programme' link='/singlePage/apollo1' targets={[2, 3]} setTargets={this.setTargets} removeTargets={this.removeTargets} isDisplayed={currentPeriod === 'apollo1' ? true : false}/>
                         <TimelineDate color={color} date='1969' isRed={(targets[0] === 3 || targets[1]  === 3 || currentPeriod === 'apollo1' || currentPeriod === 'apollo2')}/>
