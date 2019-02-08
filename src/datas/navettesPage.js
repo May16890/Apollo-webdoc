@@ -118,7 +118,7 @@ const NavettesMockup = [
         201 497 772 kilomètres. Elle détient le record du plus long vol pour une navette établi lors du 
         vol STS-80 avec 17 jours et 15 heures. Elle fut la première navette commandée par une femme, 
         Eileen Collins, lors du vol STS-93 en 1999.`,
-        target: ['apollo3', 1],
+        target: ['apollo3', 2],
     },
     {
         name: "Saturn I-B",
@@ -141,7 +141,7 @@ const NavettesMockup = [
         les deux instruments scientifiques qui doivent analyser les échantillons de sol et de roche. Un mât, qui est 
         implanté sur l'avant de ce boîtier et qui culmine à 2,13 mètres, porte plusieurs caméras, des sondes atmosphériques, 
         ainsi que le spectromètre laser.`,
-        target: ['apolloSoyouz', 1],
+        target: ['today', 1],
     },
     {
         name: "Station spatiale Mir",
