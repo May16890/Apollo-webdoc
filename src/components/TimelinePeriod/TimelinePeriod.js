@@ -64,7 +64,7 @@ class TimelinePeriod extends Component {
         return (
             <Link style={styled} onMouseOver={this.textAppear} onMouseLeave={this.textDisappear} className='timeline__period' to={`${link}`}>
                 <span className={`timeline__period__text ${isAppearClass}`}>{text}</span>
-                {text === 'Premice' && location === '/intro' &&
+                {text === 'Prémice' && location === '/intro' &&
                     <div className='timelineIndicator'>
                         <svg width="28" height="24">
                             <g>

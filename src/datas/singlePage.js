@@ -195,7 +195,6 @@ const erasDatas = {
                     Des procédures sont mises au point par les équipes au sol pour faire fonctionner le vaisseau dans ces conditions très dégradées et conserver suffisamment de consommables (en particulier l’énergie et l’eau) pour permettre la survie de l’équipage et la réalisation des manœuvres indispensables jusqu’au retour sur Terre.<br /><br />
                     Son lancement est repoussé à début 1971.  
                 `,
-            'audio': 'azzazaza zazazazaz aza zaza zaza zazaza zazaza.',
             'navetteName': 'AQUARIUS',
             'navette': navetteApollo13,
             'teamImg1': astroAllApollo13,
