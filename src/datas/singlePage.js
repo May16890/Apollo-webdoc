@@ -4,7 +4,7 @@ import astro3Apollo13 from '../assets/img/apollo13/astro3Apollo13.png';
 import astroAllApollo13 from '../assets/img/apollo13/astroAllApollo13.png';
 import logoApollo13 from '../assets/img/apollo13/logoApollo13.png';
 import navetteApollo13 from '../assets/img/apollo13/navetteApollo13.png';
-import audioApollo13 from '../assets/img/apollo13/audioApollo13.mp4';
+//import audioApollo13 from '../assets/img/apollo13/audioApollo13.mp4';
 
 import astro1Apollo12 from '../assets/img/apollo12/astro1Apollo12.png';
 import astro2Apollo12 from '../assets/img/apollo12/astro2Apollo12.png';
@@ -12,7 +12,7 @@ import astro3Apollo12 from '../assets/img/apollo12/astro3Apollo12.png';
 import astroAllApollo12 from '../assets/img/apollo12/astroAllApollo12.png';
 import logoApollo12 from '../assets/img/apollo12/logoApollo12.png';
 import navetteApollo12 from '../assets/img/apollo12/navetteApollo12.png';
-import vidApollo12 from '../assets/img/apollo12/vidApollo12.mp4';
+//import vidApollo12 from '../assets/img/apollo12/vidApollo12.mp4';
 import posterVidApollo12 from '../assets/img/apollo12/posterVidApollo12.png';
 
 import guerreFroide from '../assets/img/guerre_froide.png';
@@ -172,7 +172,7 @@ const erasDatas = {
             'navetteName': 'Appolo Intrepid',
             'navette': navetteApollo12,
             'teamImg': astroAllApollo12,
-            'vid': vidApollo12,
+            //'vid': vidApollo12,
             'vidPoster': posterVidApollo12,
             'vidTitle': 'The incredible journey of apollo 12',
         },
@@ -198,7 +198,7 @@ const erasDatas = {
             'navetteName': 'AQUARIUS',
             'navette': navetteApollo13,
             'teamImg1': astroAllApollo13,
-            'audio': audioApollo13,
+            //'audio': audioApollo13,
             'audioTitle': 'Apollo 13 launching',
         },
     ],

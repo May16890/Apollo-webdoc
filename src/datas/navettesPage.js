@@ -7,6 +7,9 @@ import Mercury from "../assets/img/mercury.png";
 import SaturnV from "../assets/img/saturn-V.png";
 import Apollo from "../assets/img/apollo-11.png";
 import SaturnIB from "../assets/img/saturn-IB.png";
+import Curiosity from '../assets/img/Curiosity.png';
+import ApolloLunarModule from '../assets/img/ApolloLunarModule.png';
+import Mir from '../assets/img/Mir.png';
 
 const NavettesMockup = [
     [{
@@ -44,7 +47,7 @@ const NavettesMockup = [
         Centaur dont les caractéristiques révolutionnaires permettent d'accroître fortement la 
         charge utile qui passe à 4 tonnes en orbite basse et 1 tonne pour les sondes 
         interplanétaires.`,
-        target: ['premice', 3],
+        target: ['premice', 2],
     },
     {
         name: "Titan II",
@@ -65,7 +68,7 @@ const NavettesMockup = [
         vaisseau de résister à la température engendrée par sa rentrée atmosphérique à 
         très grande vitesse dans les couches denses de l'atmosphère. 
         Le vaisseau Mercury est conçu pour amerrir en pleine mer.`,
-        target: ['premice', 3],
+        target: ['premice', 2],
     },
     {
         name: "Saturn V",
@@ -91,7 +94,19 @@ const NavettesMockup = [
         chaleur produite par la rentrée atmosphérique et qui lui permet d'y survivre. C'est le seul des 
         quatre modules qui revient à la surface de la Terre. L'espace pressurisé dans lequel doivent 
         vivre les astronautes est très exigu car son volume habitable est de 6,5 m.`,
-        target: ['premice', 3],
+        target: ['apollo3', 1],
+    },
+    {
+        name: "Module Lunaire Apollo",
+        src: ApolloLunarModule,
+        desc: `
+        Le module lunaire ou LEM (pour Lunar Excursion Module) ou LM (pour Lunar Module) est le véhicule 
+        spatial utilisé dans le cadre du programme spatial américain Apollo (1961-1972) pour débarquer des hommes 
+        sur la Lune. Son rôle est de faire atterrir sur la Lune deux des trois membres d'équipage du vaisseau Apollo 
+        avec des équipements scientifiques, de leur permettre d'y séjourner de deux à quatre jours avant de 
+        décoller pour rejoindre le module de commande et de service (CSM) resté en orbite lunaire et chargé 
+        de ramener l'équipage sur Terre.`,
+        target: ['apollo3', 1],
     },
     {
         name: "Colombia",
@@ -103,7 +118,7 @@ const NavettesMockup = [
         201 497 772 kilomètres. Elle détient le record du plus long vol pour une navette établi lors du 
         vol STS-80 avec 17 jours et 15 heures. Elle fut la première navette commandée par une femme, 
         Eileen Collins, lors du vol STS-93 en 1999.`,
-        target: ['premice', 3],
+        target: ['apollo3', 1],
     },
     {
         name: "Saturn I-B",
@@ -114,7 +129,30 @@ const NavettesMockup = [
         ce qui en faisait un lanceur de choix pour tester le vaisseau Apollo pendant que la 
         fusée Saturn V nécessaire au lancement complet, était encore en cours d'élaboration. 
         Saturn IB fut utilisé plus tard, pour les missions habitées Skylab et le projet Apollo-Soyouz.`,
-        target: ['premice', 3],
+        target: ['apolloSoyouz', 1],
+    },
+    {
+        name: "Rover Curiosity",
+        src: Curiosity,
+        desc: `Le rover Curiosity est un engin particulièrement imposant avec une masse de 899 kg à comparer aux 174 
+        kg pour les rovers Spirit et Opportunity, et à peine 10,6 kg pour Sojourner. Sa taille lui permet d'embarquer 
+        75 kg d'instruments contre 6,8 kg pour les rovers MER. Le rover est long de 2,7 m. La partie centrale du rover 
+        montée sur roues, la « boîte électronique chaude » (warm electronics box ou WEB) renferme l'électronique et 
+        les deux instruments scientifiques qui doivent analyser les échantillons de sol et de roche. Un mât, qui est 
+        implanté sur l'avant de ce boîtier et qui culmine à 2,13 mètres, porte plusieurs caméras, des sondes atmosphériques, 
+        ainsi que le spectromètre laser.`,
+        target: ['apolloSoyouz', 1],
+    },
+    {
+        name: "Station spatiale Mir",
+        src: Mir,
+        desc: `Mir (du russe : Мир signifiant « paix » et « monde ») était une station spatiale russe placée en orbite terrestre 
+        basse par l'Union soviétique. Mise en orbite le 19 février 1986 et détruite volontairement le 23 mars 2001, elle fut 
+        assemblée en orbite entre 1986 et 1996. Mir était la première station spatiale composée de plusieurs modules, possédait une masse 
+        supérieure à celle de n'importe quel satellite précédent et détenait le record du plus grand satellite artificiel en orbite autour de 
+        la Terre jusqu'à sa désorbitation le 21 mars 2001 (record aujourd'hui détenu par la Station spatiale internationale). Mir a servi de 
+        laboratoire de recherche en micropesanteur.`,
+        target: ['apolloSoyouz', 1],
     }],
     // [{
     //     name: "Saturn I-B",
