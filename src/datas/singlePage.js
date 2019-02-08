@@ -4,6 +4,7 @@ import astro3Apollo13 from '../assets/img/apollo13/astro3Apollo13.png';
 import astroAllApollo13 from '../assets/img/apollo13/astroAllApollo13.png';
 import logoApollo13 from '../assets/img/apollo13/logoApollo13.png';
 import navetteApollo13 from '../assets/img/apollo13/navetteApollo13.png';
+import audioApollo13 from '../assets/img/apollo13/audioApollo13.mp4';
 
 import astro1Apollo12 from '../assets/img/apollo12/astro1Apollo12.png';
 import astro2Apollo12 from '../assets/img/apollo12/astro2Apollo12.png';
@@ -198,6 +199,8 @@ const erasDatas = {
             'navetteName': 'AQUARIUS',
             'navette': navetteApollo13,
             'teamImg1': astroAllApollo13,
+            'audio': audioApollo13,
+            'audioTitle': 'Apollo 13 launching',
         },
     ],
     apolloSoyuz: [

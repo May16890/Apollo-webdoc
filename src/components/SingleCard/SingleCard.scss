@@ -239,3 +239,20 @@ margin-left: 15%;
     font-size: 2em;
     margin-bottom: 30px;
 }
+
+.singlePage__audioWrapper {
+    margin: 200px 0px 160px 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.singlePage__audioWrapper h3 {
+    color: #CC2F2F;
+    font-weight: 600;
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}

@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import ReactAudioPlayer from 'react-audio-player';
 import './SingleCard.scss';
 import SingleCardText from '../SingleCardText/SingleCardText.js';
 import SingleCardImg from '../SingleCardImg/SingleCardImg.js';
@@ -31,7 +32,7 @@ const SingleCard = ({nextCard, index, erasDatas, fullscreen, opacity, onClick, t
     //     }
     //     return null;
     // });
-    const { logo, titleCard, intro, astro1, astro2, astro3, content, audio, navetteName, navette, teamImg, teamImg1, moon, intro1, geminiPic, AtlasContent, journal, rover, MSLPic1, MSLPic2, vid, vidPoster, vidTitle} = singleCard;
+    const { logo, titleCard, intro, astro1, astro2, astro3, content, navetteName, navette, teamImg, teamImg1, moon, intro1, geminiPic, AtlasContent, journal, rover, MSLPic1, MSLPic2, vid, vidPoster, vidTitle, audio, audioTitle} = singleCard;
     return (
         <Fragment>
             <span className='singlePage__closeFS' style={fullscreen ? {opacity: 1} : {opacity: 0}} onClick={closeFS}>FERMER</span>
@@ -73,6 +74,17 @@ const SingleCard = ({nextCard, index, erasDatas, fullscreen, opacity, onClick, t
                                     <img className='singlePage__astro' src={astro1} alt='astro1' style={!fullscreen ? {width: 95, height: 140,} : {}}/>
                                     <img className='singlePage__astro' src={astro2} alt='astro2' style={!fullscreen ? {width: 95, height: 140,} : {}}/>
                                     <img className='singlePage__astro' src={astro3} alt='astro3' style={!fullscreen ? {width: 95, height: 140,} : {}}/>
+                                </div>
+                            }
+                            {
+                                audio &&
+                                <div className='singlePage__audioWrapper'>
+                                    <h3>{audioTitle}</h3>
+                                    <ReactAudioPlayer
+                                        style={{width: 380}}
+                                        src={audio}
+                                        controls
+                                    />
                                 </div>
                             }
                             {
