@@ -224,3 +224,18 @@ margin-left: 15%;
     margin-top: 20%;
     margin-left: 10%;
 }
+
+.singlePage__videoWrapper {
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px 180px 50%;
+}
+.singlePage__videoWrapper h3 {
+    color: #CC2F2F;
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 30px;
+}

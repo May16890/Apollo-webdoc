@@ -1,10 +1,19 @@
-import testImg from '../assets/img/4_19.jpg';
 import astro1Apollo13 from '../assets/img/apollo13/astro1Apollo13.png';
 import astro2Apollo13 from '../assets/img/apollo13/astro2Apollo13.png';
 import astro3Apollo13 from '../assets/img/apollo13/astro3Apollo13.png';
 import astroAllApollo13 from '../assets/img/apollo13/astroAllApollo13.png';
 import logoApollo13 from '../assets/img/apollo13/logoApollo13.png';
 import navetteApollo13 from '../assets/img/apollo13/navetteApollo13.png';
+
+import astro1Apollo12 from '../assets/img/apollo12/astro1Apollo12.png';
+import astro2Apollo12 from '../assets/img/apollo12/astro2Apollo12.png';
+import astro3Apollo12 from '../assets/img/apollo12/astro3Apollo12.png';
+import astroAllApollo12 from '../assets/img/apollo12/astroAllApollo12.png';
+import logoApollo12 from '../assets/img/apollo12/logoApollo12.png';
+import navetteApollo12 from '../assets/img/apollo12/navetteApollo12.png';
+import vidApollo12 from '../assets/img/apollo12/vidApollo12.mp4';
+import posterVidApollo12 from '../assets/img/apollo12/posterVidApollo12.png';
+
 import guerreFroide from '../assets/img/guerre_froide.png';
 import intro2 from '../assets/img/wernher.png';
 import GFLogo from '../assets/img/GF_logo.png';
@@ -137,6 +146,35 @@ const erasDatas = {
         },
     ],
     apollo3: [
+        {
+            'logo': logoApollo12,
+            'titleCard': `Apollo <span style='color:red;'>12</span>`,
+            'intro': `Le 14 novembre 1969 est lancé la sixième mission spatiale avec équipage du programme Apollo, et la deuxième à se poser sur la Lune. L’équipage comprend <span style='font-weight:800;'>Pete Conrad</span> (commandant), <span style='font-weight:800;'>Richard Gordon</span> et <span style='font-weight:800;'>Alan Bean</span>. <br /><br />
+
+            Quatre sites d’atterrissage sont envisagés pour la cette missions mais le directeur du programme Apollo Sam Phillips décide que Apollo 12 se posera dans un endroit ne figurant pas dans cette liste. Le site retenu est situé à proximité immédiate de la sonde spatiale <span style='font-weight:800;'>Surveyor 3</span> dans l’Océan des Tempêtes.`,
+            'astro1': astro1Apollo12,
+            'astro2': astro2Apollo12,
+            'astro3': astro3Apollo12,
+            'content': `
+                        Dès le 12 juillet 1969, c’est-à-dire avant même le décollage de la mission Apollo 11, les objectifs de la mission Apollo 12 sont figés et publiés. <br /><br />
+
+                        L’étude de l’environnement et la surface de la Lune et le déploiement d’un ensemble d’instruments scientifiques ALSEP complet constituent les objectifs principaux. <br /><br /><br /><br />
+
+                        Dès le 12 juillet 1969, c’est-à-dire avant même le décollage de la mission Apollo 11, les objectifs de la mission Apollo 12 sont figés et publiés. L’étude de l’environnement et la surface de la Lune et le déploiement d’un ensemble d’instruments scientifiques ALSEP complet constituent les objectifs principaux. <br /><br /><br /><br />
+
+                        Trois heures et demi après le décollage, l’équipage effectue la manœuvre destinée à amarrer le module lunaire <span style='font-weight:800;'>Apollo Intrepid</span> au module de commande et de service Apollo Yankee Clipper dans lequel se trouvent les astronautes.<br /><br />
+
+                        Dès le retour sur Terre de l’équipage, il est évident que la mission est une réussite complète. 
+                        Les modifications apportées dans la procédure de descente du module lunaire vers la surface de la Lune ont parfaitement fonctionné en permettant de poser le module lunaire exactement à l’endroit souhaité c’est-à-dire à proximité immédiate de <span style='font-weight:800;'>Surveyor 3</span>. 
+
+                `,
+            'navetteName': 'Appolo Intrepid',
+            'navette': navetteApollo12,
+            'teamImg': astroAllApollo12,
+            'vid': vidApollo12,
+            'vidPoster': posterVidApollo12,
+            'vidTitle': 'The incredible journey of apollo 12',
+        },
         {
             'logo': logoApollo13,
             'titleCard': `Apollo <span style='color:red;'>13</span>`,
