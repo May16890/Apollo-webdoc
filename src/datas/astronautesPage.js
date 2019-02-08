@@ -28,7 +28,7 @@ const AstronautesMockup = [
         src: Shepard,
         date: "18 Nov. 1923",
         mission: "Mercury 3, Apollo 14",
-        target: ['premice', 1],
+        target: ['premice', 2],
         timeline: 'Premice',
     },
     {
@@ -44,7 +44,7 @@ const AstronautesMockup = [
         src: Glenn,
         date: "18 Juil. 1921",
         mission: "Mercury 6",
-        target: ['premice', 3],
+        target: ['premice', 2],
         timeline: 'Apollo 11',
     },
     {
@@ -60,7 +60,7 @@ const AstronautesMockup = [
         src: Young,
         date: "24 Sept. 1930",
         mission: "Gemini 10, Apollo 10 et 16",
-        target: ['premice', 5],
+        target: ['premice', 3],
         timeline: 'Fin du programme',
     },
     {
@@ -68,7 +68,7 @@ const AstronautesMockup = [
         src: White,
         date: "14 Nov. 1930",
         mission: "Gemini 4, Apollo 1",
-        target: ['premice', 5],
+        target: ['premice', 3],
         timeline: 'Aujourd\'hui',
     },
     {
@@ -76,28 +76,28 @@ const AstronautesMockup = [
         src: Schirra,
         date: "12 Mars 1923",
         mission: "Mercury 8, Gemini 6, Apollo 7",
-        target: ['premice', 5]
+        target: ['apollO1', 1]
     },
     {
         name: "Frank Borman",
         src: Borman,
         date: "14 Mars 1928",
         mission: "Gemini 7, Apollo 8",
-        target: ['premice', 5]
+        target: ['apollo1', 1]
     },
     {
         name: "Thomas Stafford",
         src: Stafford,
         date: "17 Sept. 1930",
         mission: "Gemini 9, Apollo 10, Apollo-Soyouz" ,
-        target: ['premice', 5]
+        target: ['apollo', 2]
     },
     {
         name: "Eugene Cernan",
         src: Cernan,
         date: "14 Mars 1934",
         mission: "Gemini 9, Apollo 10 et 17" ,
-        target: ['premice', 5]
+        target: ['apollo', 2]
     },
     {
         name: "Neil Armstrong",
@@ -146,7 +146,6 @@ const AstronautesMockup = [
         mission: "Apollo 12, Skylab 3" ,
         target: ['apollo3', 0],
         timeline: 'L\'après Apollo 11'
-
     },
     {
         name: "James Lovell",
@@ -155,7 +154,6 @@ const AstronautesMockup = [
         mission: " Gemini 7 et 12, Apollo 8 et 13" ,
         target: ['apollo3', 1],
         timeline: 'L\'après Apollo 11'
-
     },
     {
         name: "Fred Haise",
@@ -203,8 +201,7 @@ const AstronautesMockup = [
         date: "9 Mai 1931",
         mission: "Apollo-Soyouz",
         target: ['apolloSpyouz', 1],
-        timeline: 'Fin du programme'
-
+        timeline: 'Fin du programme
     },
     ]
 ]
