@@ -1,10 +1,13 @@
 import React, { Fragment } from 'react';
+import ReactAudioPlayer from 'react-audio-player';
 import './SingleCard.scss';
 import SingleCardText from '../SingleCardText/SingleCardText.js';
 import SingleCardImg from '../SingleCardImg/SingleCardImg.js';
 import SingleCardVid from '../SingleCardVid/SingleCardVid.js';
 import SingleCardAudio from '../SingleCardAudio/SingleCardAudio.js';
 import moonSingleCard from '../../assets/img/moonSingleCard.png';
+
+import posterVidApollo12 from '../../assets/img/apollo12/posterVidApollo12.png';
 
 const SingleCard = ({nextCard, index, erasDatas, fullscreen, opacity, onClick, title, singleCard, closeFS}) => {
     const  style = {
@@ -29,7 +32,7 @@ const SingleCard = ({nextCard, index, erasDatas, fullscreen, opacity, onClick, t
     //     }
     //     return null;
     // });
-    const { logo, titleCard, intro, astro1, astro2, astro3, content, audio, navetteName, navette, teamImg, teamImg1, moon, intro1, geminiPic, AtlasContent, journal, rover, MSLPic1, MSLPic2} = singleCard;
+    const { logo, titleCard, intro, astro1, astro2, astro3, content, navetteName, navette, teamImg, teamImg1, moon, intro1, geminiPic, AtlasContent, journal, rover, MSLPic1, MSLPic2, vid, vidPoster, vidTitle, audio, audioTitle} = singleCard;
     return (
         <Fragment>
             <span className='singlePage__closeFS' style={fullscreen ? {opacity: 1} : {opacity: 0}} onClick={closeFS}>FERMER</span>
@@ -74,6 +77,17 @@ const SingleCard = ({nextCard, index, erasDatas, fullscreen, opacity, onClick, t
                                 </div>
                             }
                             {
+                                audio &&
+                                <div className='singlePage__audioWrapper'>
+                                    <h3>{audioTitle}</h3>
+                                    <ReactAudioPlayer
+                                        style={{width: 380}}
+                                        src={audio}
+                                        controls
+                                    />
+                                </div>
+                            }
+                            {
                                 navette &&
                                 <div className='singlePage__navetteWrapper'>
                                     <h3 className='singlePage__navetteTitle'>{navetteName}</h3>
@@ -112,6 +126,14 @@ const SingleCard = ({nextCard, index, erasDatas, fullscreen, opacity, onClick, t
                         </div>
                     </div>
                     <div className="singlePage__bottomWrapper2">
+                        {vid && 
+                        <div className='singlePage__videoWrapper'>
+                            <h3>{vidTitle}</h3>
+                            <video width="1200" controls poster={vidPoster}>
+                                <source src={vid} type="video/mp4" />
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>}
                         <div className='singlePage__teamImgWrapper'>
                         {
                                 moon && <img className='singlePage__teamImg' src={moon} alt='moon'/>

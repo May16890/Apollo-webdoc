@@ -121,6 +121,7 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 120px;
 }
 
 .singlePage__navetteWrapper {
@@ -222,4 +223,36 @@ margin-left: 15%;
     height: auto;
     margin-top: 20%;
     margin-left: 10%;
+}
+
+.singlePage__videoWrapper {
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px 180px 50%;
+}
+.singlePage__videoWrapper h3 {
+    color: #CC2F2F;
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.singlePage__audioWrapper {
+    margin: 200px 0px 160px 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.singlePage__audioWrapper h3 {
+    color: #CC2F2F;
+    font-weight: 600;
+    font-size: 1.4em;
+    margin-bottom: 30px;
 }
