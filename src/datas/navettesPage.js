@@ -21,7 +21,7 @@ const NavettesMockup = [
         Le premier étage est le missile Redstone proprement dit allongé haut de 17 m. 
         Son unique moteur A7 de 37,4 tonnes de poussée brûle un mélange de UDMH et diéthylène triamine.
         Les trois autres étages sont à propergols solides.`,
-        target: ['premice', 1],
+        target: ['premice', 0],
     },
     {
         name: "Mercury-Redstone",
@@ -33,7 +33,7 @@ const NavettesMockup = [
         Six mises à feu furent réalisées dont les deux dernières avec un astronaute à bord.
         Du fait de sa puissance limitée la Mercury-Redstone ne permettait qu'un vol suborbital. 
         Pour les missions Mercury suivantes ce lanceur fut remplacé par la fusée Atlas D.`,
-        target: ['premice', 2],
+        target: ['premice', 0],
     },
     {
         name: "Atlas",
@@ -47,7 +47,7 @@ const NavettesMockup = [
         Centaur dont les caractéristiques révolutionnaires permettent d'accroître fortement la 
         charge utile qui passe à 4 tonnes en orbite basse et 1 tonne pour les sondes 
         interplanétaires.`,
-        target: ['premice', 2],
+        target: ['premice', 1],
     },
     {
         name: "Titan II",
@@ -55,7 +55,7 @@ const NavettesMockup = [
         desc: `Le Titan II est plus lourd et plus puissant qu'Atlas et Titan I et est 
         donc proposé pour le lancement des capsules habitées Gemini, plus lourdes que les capsules 
         Mercury qui étaient lancées par la fusée Atlas D.`,
-        target: ['premice', 3],
+        target: ['premice', 2],
     },
     {
         name: "Mercury",
@@ -68,7 +68,7 @@ const NavettesMockup = [
         vaisseau de résister à la température engendrée par sa rentrée atmosphérique à 
         très grande vitesse dans les couches denses de l'atmosphère. 
         Le vaisseau Mercury est conçu pour amerrir en pleine mer.`,
-        target: ['premice', 2],
+        target: ['premice', 1],
     },
     {
         name: "Saturn V",
@@ -80,7 +80,7 @@ const NavettesMockup = [
         cryogénique performant d'hydrogène et d'oxygène liquides. Il reste en 2019 
         le lanceur le plus puissant (charge utile) jamais développé, car aucun programme aussi 
         ambitieux que le programme Apollo n'a pu aboutir par la suite.`,
-        target: ['premice', 3],
+        target: ['apollo1', 1],
     },
     {
         name: "Apollo XI",
@@ -94,7 +94,7 @@ const NavettesMockup = [
         chaleur produite par la rentrée atmosphérique et qui lui permet d'y survivre. C'est le seul des 
         quatre modules qui revient à la surface de la Terre. L'espace pressurisé dans lequel doivent 
         vivre les astronautes est très exigu car son volume habitable est de 6,5 m.`,
-        target: ['apollo3', 1],
+        target: ['apollo2', 0],
     },
     {
         name: "Module Lunaire Apollo",
@@ -106,7 +106,7 @@ const NavettesMockup = [
         avec des équipements scientifiques, de leur permettre d'y séjourner de deux à quatre jours avant de 
         décoller pour rejoindre le module de commande et de service (CSM) resté en orbite lunaire et chargé 
         de ramener l'équipage sur Terre.`,
-        target: ['apollo3', 1],
+        target: ['apollo2', 1],
     },
     {
         name: "Colombia",
@@ -118,9 +118,9 @@ const NavettesMockup = [
         201 497 772 kilomètres. Elle détient le record du plus long vol pour une navette établi lors du 
         vol STS-80 avec 17 jours et 15 heures. Elle fut la première navette commandée par une femme, 
         Eileen Collins, lors du vol STS-93 en 1999.`,
-        target: ['apollo3', 2],
-    },
-    {
+        target: ['apollo3', 1],
+    }],
+    [{
         name: "Saturn I-B",
         src: SaturnIB,
         desc: `La fusée spatiale Saturn I-B était une version améliorée du lanceur Saturn I, 
@@ -129,7 +129,7 @@ const NavettesMockup = [
         ce qui en faisait un lanceur de choix pour tester le vaisseau Apollo pendant que la 
         fusée Saturn V nécessaire au lancement complet, était encore en cours d'élaboration. 
         Saturn IB fut utilisé plus tard, pour les missions habitées Skylab et le projet Apollo-Soyouz.`,
-        target: ['apolloSoyouz', 1],
+        target: ['apolloSoyouz', 0],
     },
     {
         name: "Rover Curiosity",
@@ -141,7 +141,7 @@ const NavettesMockup = [
         les deux instruments scientifiques qui doivent analyser les échantillons de sol et de roche. Un mât, qui est 
         implanté sur l'avant de ce boîtier et qui culmine à 2,13 mètres, porte plusieurs caméras, des sondes atmosphériques, 
         ainsi que le spectromètre laser.`,
-        target: ['today', 1],
+        target: ['today', 0],
     },
     {
         name: "Station spatiale Mir",
@@ -152,7 +152,7 @@ const NavettesMockup = [
         supérieure à celle de n'importe quel satellite précédent et détenait le record du plus grand satellite artificiel en orbite autour de 
         la Terre jusqu'à sa désorbitation le 21 mars 2001 (record aujourd'hui détenu par la Station spatiale internationale). Mir a servi de 
         laboratoire de recherche en micropesanteur.`,
-        target: ['apolloSoyouz', 1],
+        target: ['apolloSoyouz', 0],
     }],
     // [{
     //     name: "Saturn I-B",

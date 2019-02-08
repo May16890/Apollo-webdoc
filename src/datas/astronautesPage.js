@@ -125,42 +125,42 @@ const AstronautesMockup = [
         src: Conrad,
         date: "2 Juin 1930",
         mission: " Gemini 5 et 11, Apollo 12, Skylab 2" ,
-        target: ['apollo3', 1]
+        target: ['apollo3', 0]
     },
     {
         name: "Richard Gordon",
         src: Gordon,
         date: "5 Oct. 1929",
         mission: "Gemini 11, Apollo 12" ,
-        target: ['Apollo3', 1]
+        target: ['apollo3', 0]
     },
     {
         name: "Alan Bean",
         src: Bean,
         date: " 15 Mars 1932",
         mission: "Apollo 12, Skylab 3" ,
-        target: ['apollo3', 1]
+        target: ['apollo3', 0]
     },
     {
         name: "James Lovell",
         src: Lovell,
         date: "25 Mars 1928",
         mission: " Gemini 7 et 12, Apollo 8 et 13" ,
-        target: ['apollo3', 2]
+        target: ['apollo3', 1]
     },
     {
         name: "Fred Haise",
         src: Haise,
         date: "14 Nov. 1933",
         mission: "Apollo 13" ,
-        target: ['apollo3', 2]
+        target: ['apollo3', 1]
     },
     {
         name: "Jack Swigert",
         src: Swigert,
         date: "30 Août 1931",
         mission: "Apollo 13" ,
-        target: ['apollo3', 2]
+        target: ['apollo3', 1]
     },
     {
         name: "Alexeï Leonov",

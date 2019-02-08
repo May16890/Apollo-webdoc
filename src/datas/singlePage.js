@@ -4,7 +4,7 @@ import astro3Apollo13 from '../assets/img/apollo13/astro3Apollo13.png';
 import astroAllApollo13 from '../assets/img/apollo13/astroAllApollo13.png';
 import logoApollo13 from '../assets/img/apollo13/logoApollo13.png';
 import navetteApollo13 from '../assets/img/apollo13/navetteApollo13.png';
-//import audioApollo13 from '../assets/img/apollo13/audioApollo13.mp4';
+import audioApollo13 from '../assets/img/apollo13/audioApollo13.mp4';
 
 import astro1Apollo12 from '../assets/img/apollo12/astro1Apollo12.png';
 import astro2Apollo12 from '../assets/img/apollo12/astro2Apollo12.png';
@@ -12,7 +12,7 @@ import astro3Apollo12 from '../assets/img/apollo12/astro3Apollo12.png';
 import astroAllApollo12 from '../assets/img/apollo12/astroAllApollo12.png';
 import logoApollo12 from '../assets/img/apollo12/logoApollo12.png';
 import navetteApollo12 from '../assets/img/apollo12/navetteApollo12.png';
-//import vidApollo12 from '../assets/img/apollo12/vidApollo12.mp4';
+import vidApollo12 from '../assets/img/apollo12/vidApollo12.mp4';
 import posterVidApollo12 from '../assets/img/apollo12/posterVidApollo12.png';
 
 import guerreFroide from '../assets/img/guerre_froide.png';
@@ -21,7 +21,7 @@ import GFLogo from '../assets/img/GF_logo.png';
 import USAURSS from '../assets/img/URSS_USA.png';
 import moon from '../assets/img/moon.png';
 import AtlasContent from '../assets/img/Atlas_content.png';
-//import ImgIntro2 from '../assets/img/intro2.png';
+import ImgIntro2 from '../assets/img/intro2.png';
 import Journal from '../assets/img/tintin_journal.png';
 import GeminiPatch from '../assets/img/geminiPatch.png';
 import MercuryPatch from '../assets/img/mercuryPatch.png';
@@ -52,7 +52,7 @@ const erasDatas = {
         <br><br/>
         À la surprise générale, le 4 octobre 1957, l’Union soviétique est la première à placer en orbite le satellite <span style='font-weight: 800;'>Spoutnik 1</span>. L’opinion internationale est fascinée par cet événement qui semble présager le début d’une nouvelle ère technique et scientifique.
         <br><br/>
-        L’équipe de <span style='font-weight: 800;'>Wernher von Braun</span> parvient finalement à lancer le premier satellite américain, Explorer 1, le 1er février 1958 grâce au lanceur <span style='font-weight:800'>Juno I</span> improvisé à partir d’un missile balistique <span style='font-weight: 800'></span>Redstone.`,
+        L’équipe de <span style='font-weight: 800;'>Wernher von Braun</span> parvient finalement à lancer le premier satellite américain, Explorer 1, le 1er février 1958 grâce au lanceur <span style='font-weight:800'>Juno I</span> improvisé à partir d’un missile balistique <span style='font-weight: 800'>Redstone</span>.`,
         'teamImg': USAURSS,
         'moon': moon
         },
@@ -100,7 +100,7 @@ const erasDatas = {
             <br><br/>
             Le 21 décembre 1968 est lancée la mission Apollo 8 avec Frank Borman  comme commandant de bord. Elle est la première mission du programme a quitter l'orbite terrestre pour se rendre sur celle de la lune.
             <br><br/>
-            La fusée spatiale Saturn V utilisée pour mettre en orbite Apollo 8 fut désignée SA-503. Il s'agissait du troisième exemplaire construit. 
+            La fusée spatiale <span style="font-weight:800">Saturn V</span>utilisée pour mettre en orbite Apollo 8 fut désignée SA-503. Il s'agissait du troisième exemplaire construit. 
             Les astronautes firent au total 10 révolutions autour du satellite terrestre. Durant leur expédition, ils purent prendre différents clichés dont le premier d'un lever de Terre. Apollo 8 permit à l'Homme de voir directement la «face cachée» de la Lune. L'une des tâches dédiées à l'équipage consistait à effectuer une reconnaissance en vue d'un atterrissage, surtout de la mer de la Tranquillité où devait se poser Apollo 11.`,
             'navetteName': 'GEMINI',
             
@@ -172,7 +172,7 @@ const erasDatas = {
             'navetteName': 'Appolo Intrepid',
             'navette': navetteApollo12,
             'teamImg': astroAllApollo12,
-            //'vid': vidApollo12,
+            'vid': vidApollo12,
             'vidPoster': posterVidApollo12,
             'vidTitle': 'The incredible journey of apollo 12',
         },
@@ -198,7 +198,7 @@ const erasDatas = {
             'navetteName': 'AQUARIUS',
             'navette': navetteApollo13,
             'teamImg1': astroAllApollo13,
-            //'audio': audioApollo13,
+            'audio': audioApollo13,
             'audioTitle': 'Apollo 13 launching',
         },
     ],
@@ -209,14 +209,14 @@ const erasDatas = {
             'titleCard': `Skylab / Apollo-Soyouz`,
             'intro': `Skylab est une station spatiale longue de 36 mètres. Elle fut mise en orbite le 14 mai 1973 par une Saturn V. Son volume habitable de 347 m³ sur 407 m² contient : une salle de travail de 17 m², une salle de séjour de 10 m², un dortoir avec alvéoles individuelles de 7 m² et un débarras de 3 m².`,
             'content': `L’alimentation de Skylab est obtenue par 4 cellules solaires d'une envergure de 111 m² au total.
-            Les astronautes rejoignent Skylab avec une capsule "Apollo" lancée par une Saturn I-B.
+            Les astronautes rejoignent Skylab avec une capsule "Apollo" lancée par une <span style='font-weight: 800'>Saturn I-B.</span>
             
             <br><br/>
             <br><br/>
 
             C’est le 15 Juillet 1975 que la mission <span style='font-weight: 800'>Soyouz 19</span> a décollé de Baïkonour. A bord de l'engin spatial se trouvent les cosmonautes soviétiques Alexeï Leonov et Valéri Kubassov. Sept heures plus tard, un équipage américain quittait la Terre à Cap Canaveral à bord d'une capsule "Apollo" : Thomas Stafford, Donald Slayton et Vance Brand. <br><br/>
             Le départ des deux équipages va les amener dans l'espace où doit avoir lieu la première entreprise spatiale commune entre l'URSS et les USA. Les deux capsules spatiales se sont amarrées l'une à l'autre le 17 Juillet grâce à un module d'arrimage spécial, au dessus de l'Europe de l'ouest. Un compartiment de sas a permis aux astronautes et cosmonautes se rendent mutuellement visite. Les deux capsules sont restées arrimées pendant 48 h. Le vol "Soyouz" a retrouvé le sol soviétique le 21 Juillet, "Apollo" a amerri le 24 Juillet. <br><br/>
-            La mission Apollo-Soyouz restera gravée comme un événement historique précurseur dans le genre avec une mise en commun des technologies. L’image de rapprochement des deux vaisseaux a fait le tour du monde grâce à la télévision et à la presse écrite. La plus grande réussite de cette mission ne fut pas technique, mais bien politique, puisqu'il permit aux opinions publiques des deux camps de se rendre compte que Soviétiques et Américains pouvaient trouver des sujets d’entente. Ce type d’expérience de mise en commun de technologies se répétera en 1996 avec la visite de la navette spatiale américaine à la station spatiale Mir puis la création commune de la Station spatiale internationale.`,
+            La mission Apollo-Soyouz restera gravée comme un événement historique précurseur dans le genre avec une mise en commun des technologies. L’image de rapprochement des deux vaisseaux a fait le tour du monde grâce à la télévision et à la presse écrite. La plus grande réussite de cette mission ne fut pas technique, mais bien politique, puisqu'il permit aux opinions publiques des deux camps de se rendre compte que Soviétiques et Américains pouvaient trouver des sujets d’entente. Ce type d’expérience de mise en commun de technologies se répétera en 1996 avec la visite de la navette spatiale américaine à la <span style="font-weight: 800">station spatiale Mir</span> puis la création commune de la Station spatiale internationale.`,
             'navetteName': 'GEMINI',
             
         },
