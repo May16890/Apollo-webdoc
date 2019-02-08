@@ -52,8 +52,8 @@ const AstronautesMockup = [
         src: Grissom,
         date: "3 Avril 1926",
         mission: "Mercury 4, Gemini 3, Apollo 1",
-        target: ['premice', 4],
-        timeline: 'Test',
+        target: ['premice', 3],
+        timeline: 'Premice',
     },
     {
         name: "John Young",
@@ -104,91 +104,107 @@ const AstronautesMockup = [
         src: Armstrong,
         date: " 5 Août 1930",
         mission: "Gemini 8, Apollo 11" ,
-        target: ['premice', 5]
+        target: ['apollo2', 1],
+        timeline: 'Apollo 11'
     },
     {
         name: "Edwin Aldrin",
         src: Aldrin,
         date: "20 Janv. 1930",
         mission: "Gemini 12, Apollo 11" ,
-        target: ['premice', 5]
+        target: ['apollo2', 1],
+        timeline: 'Apollo 11'
     },
     {
         name: "Michael Collins",
         src: Collins,
         date: "31 Oct. 1930",
         mission: "Gemini 10, Apollo 11" ,
-        target: ['premice', 5]
+        target: ['apollo2', 1],
+        timeline: 'Apollo 11'
     },
     {
         name: "Pete Conrad",
         src: Conrad,
         date: "2 Juin 1930",
         mission: " Gemini 5 et 11, Apollo 12, Skylab 2" ,
-        target: ['premice', 5]
+        target: ['apollo3', 0],
+        timeline: 'L\'après Apollo 11'
     },
     {
         name: "Richard Gordon",
         src: Gordon,
         date: "5 Oct. 1929",
         mission: "Gemini 11, Apollo 12" ,
-        target: ['premice', 5]
+        target: ['apollo3', 0],
+        timeline: 'L\'après Apollo 11'
     },
     {
         name: "Alan Bean",
         src: Bean,
         date: " 15 Mars 1932",
         mission: "Apollo 12, Skylab 3" ,
-        target: ['premice', 5]
+        target: ['apollo3', 0],
+        timeline: 'L\'après Apollo 11'
+
     },
     {
         name: "James Lovell",
         src: Lovell,
         date: "25 Mars 1928",
         mission: " Gemini 7 et 12, Apollo 8 et 13" ,
-        target: ['premice', 5]
+        target: ['apollo3', 1],
+        timeline: 'L\'après Apollo 11'
+
     },
     {
         name: "Fred Haise",
         src: Haise,
         date: "14 Nov. 1933",
         mission: "Apollo 13" ,
-        target: ['premice', 5]
+        target: ['apollo3', 1],
+        timeline: 'L\'après Apollo 11'
     },
     {
         name: "Jack Swigert",
         src: Swigert,
         date: "30 Août 1931",
         mission: "Apollo 13" ,
-        target: ['premice', 5]
+        target: ['apollo3', 1],
+        timeline: 'L\'après Apollo 11'
     },
     {
         name: "Alexeï Leonov",
         src: Leonov,
         date: "30 Mai 1934",
         mission: "Voskhod 2, Apollo-soyouz" ,
-        target: ['premice', 5]
+        target: ['apolloSoyouz', 1],
+        timeline: 'Fin du programme'
     },
     {
         name: "Valéri Kubassov",
         src: Kubassov,
         date: "7 Janv. 1935",
         mission: "Soyouz 6, 36 et 35, Apollo-Soyouz",
-        target: ['premice', 5]
+        target: ['apolloSoyouz', 1],
+        timeline: 'Fin du programme'
     },
     {
         name: "Donald Slayton",
         src: Slayton,
         date: "1er Mars 1924",
         mission: "Apollo-Soyouz" ,
-        target: ['premice', 5]
+        target: ['apolloSoyouz', 1],
+        timeline: 'Fin du programme'
     },
     {
         name: "Vance Brand",
         src: Brand,
         date: "9 Mai 1931",
         mission: "Apollo-Soyouz",
-        target: ['premice', 5]
+        target: ['apolloSpyouz', 1],
+        timeline: 'Fin du programme'
+
     },
     ]
 ]
